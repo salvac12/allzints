@@ -4,7 +4,7 @@ import { apiVersion, dataset, projectId } from "./env";
 export const isSanityConfigured = !!projectId;
 
 export const client = createClient({
-  projectId: projectId || "placeholder",
+  projectId: projectId || "not-configured",
   dataset,
   apiVersion,
   useCdn: true,

@@ -1,7 +1,7 @@
 import { createImageUrlBuilder } from "@sanity/image-url";
 import { dataset, projectId } from "./env";
 
-const builder = createImageUrlBuilder({ projectId: projectId || "placeholder", dataset });
+const builder = createImageUrlBuilder({ projectId: projectId || "not-configured", dataset });
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function urlFor(source: any) {
