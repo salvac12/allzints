@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import CartDrawer from "@/components/CartDrawer";
-import CartHydration from "@/components/CartHydration";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -45,11 +41,7 @@ export default function RootLayout({
       <body
         className={`${playfair.variable} ${dmSans.variable} font-body antialiased`}
       >
-        <CartHydration />
-        <Navbar />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
-        <CartDrawer />
+        {children}
       </body>
     </html>
   );
