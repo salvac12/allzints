@@ -3,9 +3,12 @@ import { apiVersion, dataset, projectId } from "./env";
 
 export const isSanityConfigured = !!projectId;
 
-export const client = createClient({
-  projectId: projectId || "not-configured",
-  dataset,
-  apiVersion,
-  useCdn: true,
-});
+// Lazy client: only created when projectId is available
+export const client = isSanityConfigured
+  ? createClient({
+      projectId,
+      dataset,
+      apiVersion,
+      useCdn: true,
+    })
+  : (null as unknown as ReturnType<typeof createClient>);
