@@ -173,8 +173,11 @@ export default function CartDrawer() {
                   {total.toFixed(2)}€
                 </span>
               </div>
-              <button className="w-full bg-terracotta hover:bg-terracotta-light text-white py-3 rounded-card font-medium transition-colors">
-                Próximamente
+              <button
+                className="w-full bg-dark text-white py-3 rounded-card font-medium transition-colors opacity-60 cursor-not-allowed"
+                disabled
+              >
+                Finalizar compra (próximamente)
               </button>
             </div>
           )}

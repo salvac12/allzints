@@ -1,7 +1,8 @@
 "use client";
 
 import { create } from "zustand";
-import { persist } from "zustand/middleware";
+import { persist, createJSONStorage } from "zustand/middleware";
+import { useEffect, useState } from "react";
 import type { Product, CartItem } from "@/types/product";
 
 interface CartState {
@@ -65,10 +66,24 @@ export const useCartStore = create<CartState>()(
     }),
     {
       name: "allzints-cart",
+      storage: createJSONStorage(() => localStorage),
       partialize: (state) => ({ items: state.items }),
+      skipHydration: true,
     }
   )
 );
+
+// Hook to handle hydration safely on the client
+export function useCartHydration() {
+  const [hydrated, setHydrated] = useState(false);
+
+  useEffect(() => {
+    useCartStore.persist.rehydrate();
+    setHydrated(true);
+  }, []);
+
+  return hydrated;
+}
 
 // Derived selectors
 export const useCartTotal = () =>
