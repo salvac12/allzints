@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useCartStore, useCartTotal, useCartCount } from "@/store/cartStore";
 
 export default function CartDrawer() {
@@ -173,12 +174,13 @@ export default function CartDrawer() {
                   {total.toFixed(2)}€
                 </span>
               </div>
-              <button
-                className="w-full bg-dark text-white py-3 rounded-card font-medium transition-colors opacity-60 cursor-not-allowed"
-                disabled
+              <Link
+                href="/checkout"
+                onClick={closeCart}
+                className="block w-full bg-terracotta hover:bg-terracotta-light text-white py-3 rounded-card font-medium transition-colors text-center"
               >
-                Finalizar compra (próximamente)
-              </button>
+                Finalizar compra
+              </Link>
             </div>
           )}
         </div>
