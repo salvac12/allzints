@@ -3,10 +3,12 @@ import type { ShippingInfo, OrderItem } from "@/types/order";
 import { createClient } from "next-sanity";
 import { apiVersion, dataset, projectId } from "@/sanity/env";
 import { productPriceQuery } from "@/sanity/queries";
-import { isSanityConfigured } from "@/sanity/client";
+
+const sanityConfigured = !!projectId;
 
 // Server-side Sanity client (no CDN cache for price validation)
-const serverClient = projectId
+// Only created when projectId is available
+const serverClient = sanityConfigured
   ? createClient({
       projectId,
       dataset,
@@ -44,7 +46,7 @@ export async function POST(request: NextRequest) {
     // Validate prices and stock from Sanity (server-side, no CDN)
     let serverTotal = 0;
 
-    if (serverClient && isSanityConfigured) {
+    if (serverClient && sanityConfigured) {
       for (const item of items) {
         const sanityProduct = await serverClient.fetch(productPriceQuery, {
           id: item._id,
