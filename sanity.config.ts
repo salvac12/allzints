@@ -7,6 +7,7 @@ import { apiVersion, dataset, projectId } from "@/sanity/env";
 export default defineConfig({
   name: "allzints-studio",
   title: "All Zints — Admin",
+  basePath: "/studio",
   projectId,
   dataset,
   plugins: [structureTool(), visionTool({ defaultApiVersion: apiVersion })],
