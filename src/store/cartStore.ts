@@ -3,12 +3,12 @@
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 import { useEffect, useState } from "react";
-import type { Product, CartItem } from "@/types/product";
+import type { CartItem } from "@/types/product";
 
 interface CartState {
   items: CartItem[];
   isOpen: boolean;
-  addItem: (product: Product) => void;
+  addItem: (item: Omit<CartItem, "quantity">) => void;
   removeItem: (id: string) => void;
   updateQuantity: (id: string, quantity: number) => void;
   clearCart: () => void;
@@ -23,13 +23,15 @@ export const useCartStore = create<CartState>()(
       items: [],
       isOpen: false,
 
-      addItem: (product: Product) =>
+      addItem: (product: Omit<CartItem, "quantity">) =>
         set((state) => {
-          const existing = state.items.find((item) => item.id === product.id);
+          const existing = state.items.find(
+            (item) => item._id === product._id
+          );
           if (existing) {
             return {
               items: state.items.map((item) =>
-                item.id === product.id
+                item._id === product._id
                   ? { ...item, quantity: item.quantity + 1 }
                   : item
               ),
@@ -44,17 +46,17 @@ export const useCartStore = create<CartState>()(
 
       removeItem: (id: string) =>
         set((state) => ({
-          items: state.items.filter((item) => item.id !== id),
+          items: state.items.filter((item) => item._id !== id),
         })),
 
       updateQuantity: (id: string, quantity: number) =>
         set((state) => {
           if (quantity <= 0) {
-            return { items: state.items.filter((item) => item.id !== id) };
+            return { items: state.items.filter((item) => item._id !== id) };
           }
           return {
             items: state.items.map((item) =>
-              item.id === id ? { ...item, quantity } : item
+              item._id === id ? { ...item, quantity } : item
             ),
           };
         }),

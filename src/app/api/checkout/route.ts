@@ -1,5 +1,19 @@
 import { NextRequest, NextResponse } from "next/server";
 import type { ShippingInfo, OrderItem } from "@/types/order";
+import { createClient } from "next-sanity";
+import { apiVersion, dataset, projectId } from "@/sanity/env";
+import { productPriceQuery } from "@/sanity/queries";
+import { isSanityConfigured } from "@/sanity/client";
+
+// Server-side Sanity client (no CDN cache for price validation)
+const serverClient = projectId
+  ? createClient({
+      projectId,
+      dataset,
+      apiVersion,
+      useCdn: false,
+    })
+  : null;
 
 interface CheckoutBody {
   items: OrderItem[];
@@ -27,15 +41,50 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Recalculate total server-side to prevent manipulation
-    const serverTotal = items.reduce(
-      (sum, item) => sum + item.precio * item.quantity,
-      0
-    );
+    // Validate prices and stock from Sanity (server-side, no CDN)
+    let serverTotal = 0;
+
+    if (serverClient && isSanityConfigured) {
+      for (const item of items) {
+        const sanityProduct = await serverClient.fetch(productPriceQuery, {
+          id: item._id,
+        });
+
+        if (!sanityProduct) {
+          return NextResponse.json(
+            { error: `Producto no encontrado: ${item.nombre}` },
+            { status: 400 }
+          );
+        }
+
+        if (!sanityProduct.visible) {
+          return NextResponse.json(
+            { error: `Producto no disponible: ${item.nombre}` },
+            { status: 400 }
+          );
+        }
+
+        if (sanityProduct.stock !== undefined && sanityProduct.stock < item.quantity) {
+          return NextResponse.json(
+            { error: `Stock insuficiente para: ${item.nombre}` },
+            { status: 400 }
+          );
+        }
+
+        // Use Sanity price (source of truth), not the client-sent price
+        serverTotal += sanityProduct.precio * item.quantity;
+      }
+    } else {
+      // Fallback: recalculate from client-sent prices
+      serverTotal = items.reduce(
+        (sum, item) => sum + item.precio * item.quantity,
+        0
+      );
+    }
 
     if (Math.abs(serverTotal - total) > 0.01) {
       return NextResponse.json(
-        { error: "Error de validación del total" },
+        { error: "Los precios han cambiado. Recarga la página e inténtalo de nuevo." },
         { status: 400 }
       );
     }

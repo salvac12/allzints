@@ -82,12 +82,12 @@ export default function CartDrawer() {
               <div className="space-y-4">
                 {items.map((item) => (
                   <div
-                    key={item.id}
+                    key={item._id}
                     className="flex gap-4 bg-white rounded-card p-3 shadow-sm"
                   >
                     <div className="relative w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden">
                       <Image
-                        src={`/images/productos/${item.imagen}`}
+                        src={item.imagenUrl}
                         alt={item.nombre}
                         fill
                         className="object-cover"
@@ -104,7 +104,7 @@ export default function CartDrawer() {
                       <div className="flex items-center gap-2 mt-2">
                         <button
                           onClick={() =>
-                            updateQuantity(item.id, item.quantity - 1)
+                            updateQuantity(item._id, item.quantity - 1)
                           }
                           className="w-7 h-7 rounded-full border border-border flex items-center justify-center text-mid hover:border-terracotta hover:text-terracotta transition-colors text-sm"
                           aria-label="Reducir cantidad"
@@ -116,7 +116,7 @@ export default function CartDrawer() {
                         </span>
                         <button
                           onClick={() =>
-                            updateQuantity(item.id, item.quantity + 1)
+                            updateQuantity(item._id, item.quantity + 1)
                           }
                           className="w-7 h-7 rounded-full border border-border flex items-center justify-center text-mid hover:border-terracotta hover:text-terracotta transition-colors text-sm"
                           aria-label="Aumentar cantidad"
@@ -126,7 +126,7 @@ export default function CartDrawer() {
                       </div>
                     </div>
                     <button
-                      onClick={() => removeItem(item.id)}
+                      onClick={() => removeItem(item._id)}
                       className="text-mid/40 hover:text-terracotta transition-colors self-start"
                       aria-label={`Eliminar ${item.nombre}`}
                     >

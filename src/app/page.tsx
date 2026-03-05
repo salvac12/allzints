@@ -1,12 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import type { Product } from "@/types/product";
-import productosData from "@/data/productos.json";
+import type { Product, LegacyProduct } from "@/types/product";
 import ProductGrid from "@/components/ProductGrid";
 import NewsletterForm from "@/components/NewsletterForm";
-
-const productos = productosData as Product[];
-const latestProducts = productos.slice(-8).reverse();
+import { client, isSanityConfigured } from "@/sanity/client";
+import { featuredProductsQuery } from "@/sanity/queries";
+import productosData from "@/data/productos.json";
 
 const testimonials = [
   {
@@ -26,7 +25,31 @@ const testimonials = [
   },
 ];
 
-export default function Home() {
+function legacyToProduct(p: LegacyProduct): Product {
+  return {
+    _id: p.id,
+    nombre: p.nombre,
+    slug: p.nombre.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, ""),
+    precio: p.precio,
+    categoria: p.categoria,
+    imagen: { _type: "image", asset: { _ref: "", _type: "reference" } },
+    descripcion: p.descripcion,
+    materiales: p.materiales,
+    dimensiones: p.dimensiones,
+    stock: 10,
+    oldId: p.id,
+  };
+}
+
+export default async function Home() {
+  let latestProducts: Product[];
+  if (isSanityConfigured) {
+    latestProducts = await client.fetch(featuredProductsQuery);
+  } else {
+    const legacy = productosData as LegacyProduct[];
+    latestProducts = legacy.slice(-8).reverse().map(legacyToProduct);
+  }
+
   return (
     <>
       {/* Hero */}

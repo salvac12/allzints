@@ -36,11 +36,12 @@ export default function CheckoutForm() {
 
     try {
       const orderItems = items.map((item) => ({
-        id: item.id,
+        _id: item._id,
+        oldId: item.oldId,
         nombre: item.nombre,
         precio: item.precio,
         quantity: item.quantity,
-        imagen: item.imagen,
+        imagenUrl: item.imagenUrl,
       }));
 
       const response = await fetch("/api/checkout", {
@@ -262,10 +263,10 @@ export default function CheckoutForm() {
           <div className="bg-white rounded-card p-6 shadow-sm">
             <div className="space-y-4 mb-6">
               {items.map((item) => (
-                <div key={item.id} className="flex gap-3">
+                <div key={item._id} className="flex gap-3">
                   <div className="relative w-16 h-16 flex-shrink-0 rounded-lg overflow-hidden">
                     <Image
-                      src={`/images/productos/${item.imagen}`}
+                      src={item.imagenUrl}
                       alt={item.nombre}
                       fill
                       className="object-cover"

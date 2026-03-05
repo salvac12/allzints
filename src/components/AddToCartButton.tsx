@@ -1,21 +1,43 @@
 "use client";
 
-import type { Product } from "@/types/product";
 import { useCartStore } from "@/store/cartStore";
 
 interface AddToCartButtonProps {
-  product: Product;
+  _id: string;
+  oldId?: string;
+  nombre: string;
+  slug: string;
+  precio: number;
+  categoria: string;
+  imagenUrl: string;
+  stock: number;
 }
 
-export default function AddToCartButton({ product }: AddToCartButtonProps) {
+export default function AddToCartButton(props: AddToCartButtonProps) {
   const addItem = useCartStore((s) => s.addItem);
+  const outOfStock = props.stock !== undefined && props.stock <= 0;
 
   return (
     <button
-      onClick={() => addItem(product)}
-      className="w-full bg-terracotta hover:bg-terracotta-light text-white py-3.5 rounded-card font-medium transition-colors text-lg"
+      onClick={() =>
+        addItem({
+          _id: props._id,
+          oldId: props.oldId,
+          nombre: props.nombre,
+          slug: props.slug,
+          precio: props.precio,
+          categoria: props.categoria,
+          imagenUrl: props.imagenUrl,
+        })
+      }
+      disabled={outOfStock}
+      className={`w-full py-3.5 rounded-card font-medium transition-colors text-lg ${
+        outOfStock
+          ? "bg-border text-mid cursor-not-allowed"
+          : "bg-terracotta hover:bg-terracotta-light text-white"
+      }`}
     >
-      Añadir al carrito
+      {outOfStock ? "Agotado" : "Añadir al carrito"}
     </button>
   );
 }

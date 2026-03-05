@@ -11,11 +11,12 @@ export interface ShippingInfo {
 }
 
 export interface OrderItem {
-  id: string;
+  _id: string;
+  oldId?: string;
   nombre: string;
   precio: number;
   quantity: number;
-  imagen: string;
+  imagenUrl: string;
 }
 
 export interface Order {

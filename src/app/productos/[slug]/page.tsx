@@ -2,23 +2,65 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import type { Product } from "@/types/product";
-import productosData from "@/data/productos.json";
+import type { Product, LegacyProduct } from "@/types/product";
+import { client, isSanityConfigured } from "@/sanity/client";
+import { urlFor } from "@/sanity/image";
+import {
+  productBySlugQuery,
+  allSlugsQuery,
+  relatedProductsQuery,
+} from "@/sanity/queries";
 import AddToCartButton from "@/components/AddToCartButton";
 import ProductGrid from "@/components/ProductGrid";
+import productosData from "@/data/productos.json";
 
-const productos = productosData as Product[];
+function slugify(text: string) {
+  return text
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
+function legacyToProduct(p: LegacyProduct): Product {
+  return {
+    _id: p.id,
+    nombre: p.nombre,
+    slug: slugify(p.nombre),
+    precio: p.precio,
+    categoria: p.categoria,
+    imagen: { _type: "image", asset: { _ref: "", _type: "reference" } },
+    descripcion: p.descripcion,
+    materiales: p.materiales,
+    dimensiones: p.dimensiones,
+    stock: 10,
+    oldId: p.id,
+  };
+}
 
 interface Props {
-  params: { id: string };
+  params: { slug: string };
 }
 
-export function generateStaticParams() {
-  return productos.map((p) => ({ id: p.id }));
+export async function generateStaticParams() {
+  if (isSanityConfigured) {
+    const slugs: string[] = await client.fetch(allSlugsQuery);
+    return slugs.map((slug) => ({ slug }));
+  }
+  const legacy = productosData as LegacyProduct[];
+  return legacy.map((p) => ({ slug: slugify(p.nombre) }));
 }
 
-export function generateMetadata({ params }: Props): Metadata {
-  const product = productos.find((p) => p.id === params.id);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  let product: Product | null;
+  if (isSanityConfigured) {
+    product = await client.fetch(productBySlugQuery, { slug: params.slug });
+  } else {
+    const legacy = productosData as LegacyProduct[];
+    const found = legacy.find((p) => slugify(p.nombre) === params.slug);
+    product = found ? legacyToProduct(found) : null;
+  }
   if (!product) return { title: "Producto no encontrado" };
   return {
     title: product.nombre,
@@ -26,9 +68,27 @@ export function generateMetadata({ params }: Props): Metadata {
   };
 }
 
-export default function ProductPage({ params }: Props) {
-  const product = productos.find((p) => p.id === params.id);
-  if (!product) notFound();
+export default async function ProductPage({ params }: Props) {
+  let product: Product | null;
+  let related: Product[];
+
+  if (isSanityConfigured) {
+    product = await client.fetch(productBySlugQuery, { slug: params.slug });
+    if (!product) notFound();
+    related = await client.fetch(relatedProductsQuery, {
+      categoria: product.categoria,
+      slug: product.slug,
+    });
+  } else {
+    const legacy = productosData as LegacyProduct[];
+    const found = legacy.find((p) => slugify(p.nombre) === params.slug);
+    if (!found) notFound();
+    product = legacyToProduct(found);
+    related = legacy
+      .filter((p) => p.categoria === found.categoria && p.id !== found.id)
+      .slice(0, 4)
+      .map(legacyToProduct);
+  }
 
   const categoryLabels: Record<string, string> = {
     bolsos: "Bolsos",
@@ -36,9 +96,12 @@ export default function ProductPage({ params }: Props) {
     tapiceria: "Zintas Tapicería",
   };
 
-  const related = productos
-    .filter((p) => p.categoria === product.categoria && p.id !== product.id)
-    .slice(0, 4);
+  const mainImageUrl =
+    isSanityConfigured && product.imagen?.asset?._ref
+      ? urlFor(product.imagen).width(800).height(800).url()
+      : "/images/productos/Logo.webp";
+
+  const outOfStock = product.stock !== undefined && product.stock <= 0;
 
   return (
     <div className="bg-cream min-h-screen">
@@ -71,13 +134,20 @@ export default function ProductPage({ params }: Props) {
           {/* Image */}
           <div className="relative aspect-square rounded-card overflow-hidden shadow-lg bg-white">
             <Image
-              src={`/images/productos/${product.imagen}`}
+              src={mainImageUrl}
               alt={product.nombre}
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
               priority
             />
+            {outOfStock && (
+              <div className="absolute inset-0 bg-dark/40 flex items-center justify-center">
+                <span className="bg-white text-texto text-lg px-6 py-2 rounded-full font-medium">
+                  Agotado
+                </span>
+              </div>
+            )}
           </div>
 
           {/* Info */}
@@ -125,7 +195,16 @@ export default function ProductPage({ params }: Props) {
 
             {/* Actions */}
             <div className="mt-8 space-y-3">
-              <AddToCartButton product={product} />
+              <AddToCartButton
+                _id={product._id}
+                oldId={product.oldId}
+                nombre={product.nombre}
+                slug={product.slug}
+                precio={product.precio}
+                categoria={product.categoria}
+                imagenUrl={mainImageUrl}
+                stock={product.stock}
+              />
               <a
                 href={`https://wa.me/34600000000?text=Hola, me interesa el producto: ${product.nombre}`}
                 target="_blank"
@@ -153,6 +232,31 @@ export default function ProductPage({ params }: Props) {
             </p>
           </div>
         </div>
+
+        {/* Gallery */}
+        {product.galeria && product.galeria.length > 0 && (
+          <section className="mt-12">
+            <h2 className="font-heading text-xl text-texto mb-4">
+              Más imágenes
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {product.galeria.map((img, i) => (
+                <div
+                  key={i}
+                  className="relative aspect-square rounded-card overflow-hidden shadow-sm bg-white"
+                >
+                  <Image
+                    src={urlFor(img).width(400).height(400).url()}
+                    alt={`${product.nombre} - imagen ${i + 2}`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                  />
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Related products */}
         {related.length > 0 && (
