@@ -1,0 +1,883 @@
+[
+  {
+    "id": "1596",
+    "nombre": "Bolso Atenas",
+    "precio": 22,
+    "categoria": "bolsos",
+    "imagen": "Bolso-Atenas.webp",
+    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad. Su diseño minimalista y sofisticado lo hace perfecto para cualquier ocasión.",
+    "materiales": [
+      "Lino de alta calidad"
+    ],
+    "dimensiones": "20x30 cm"
+  },
+  {
+    "id": "1598",
+    "nombre": "Bolso beige y negro Lino",
+    "precio": 25,
+    "categoria": "bolsos",
+    "imagen": "Bolso-beige-y-negro-Lino.webp",
+    "descripcion": "Bolso artesanal confeccionado en tela jacquard de alta calidad. Forrado con tela de toldo para mayor resistencia y fácil limpieza. Diseño exclusivo con estampado étnico.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ],
+    "dimensiones": "20x30 cm"
+  },
+  {
+    "id": "1601",
+    "nombre": "Bolso Ibiza Azul",
+    "precio": 22,
+    "categoria": "bolsos",
+    "imagen": "Bolso-Ibiza-Azul.webp",
+    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "materiales": [
+      "Lino de alta calidad"
+    ],
+    "dimensiones": "20x30 cm"
+  },
+  {
+    "id": "1603",
+    "nombre": "Bolso Ibiza Rosa",
+    "precio": 22,
+    "categoria": "bolsos",
+    "imagen": "Bolso-Ibiza-Rosa.webp",
+    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "materiales": [
+      "Lino de alta calidad"
+    ],
+    "dimensiones": "20x30 cm"
+  },
+  {
+    "id": "1605",
+    "nombre": "Bolso Londres",
+    "precio": 22,
+    "categoria": "bolsos",
+    "imagen": "Bolso-Londres.webp",
+    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "materiales": [
+      "Lino de alta calidad"
+    ],
+    "dimensiones": "20x30 cm"
+  },
+  {
+    "id": "1607",
+    "nombre": "Bolso Marrakech",
+    "precio": 22,
+    "categoria": "bolsos",
+    "imagen": "Bolso-Marrackech.webp",
+    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Diseño minimalista y sofisticado.",
+    "materiales": [
+      "Lino de alta calidad"
+    ],
+    "dimensiones": "20x30 cm"
+  },
+  {
+    "id": "1609",
+    "nombre": "Bolso Menorca",
+    "precio": 22,
+    "categoria": "bolsos",
+    "imagen": "Bolso-Menorca.webp",
+    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "materiales": [
+      "Lino de alta calidad"
+    ],
+    "dimensiones": "20x30 cm"
+  },
+  {
+    "id": "1611",
+    "nombre": "Bolso Nueva York",
+    "precio": 22,
+    "categoria": "bolsos",
+    "imagen": "Bolso-Nueva-York.webp",
+    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "materiales": [
+      "Lino de alta calidad"
+    ],
+    "dimensiones": "20x30 cm"
+  },
+  {
+    "id": "1613",
+    "nombre": "Bolso París",
+    "precio": 22,
+    "categoria": "bolsos",
+    "imagen": "Bolso-Paris-1.webp",
+    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Diseño minimalista y sofisticado.",
+    "materiales": [
+      "Lino de alta calidad"
+    ],
+    "dimensiones": "20x30 cm"
+  },
+  {
+    "id": "1616",
+    "nombre": "Bolso Roma",
+    "precio": 22,
+    "categoria": "bolsos",
+    "imagen": "Bolso-Roma.webp",
+    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "materiales": [
+      "Lino de alta calidad"
+    ],
+    "dimensiones": "20x30 cm"
+  },
+  {
+    "id": "1619",
+    "nombre": "Bolso Viena",
+    "precio": 22,
+    "categoria": "bolsos",
+    "imagen": "Bolso-Viena.webp",
+    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Diseño minimalista y sofisticado.",
+    "materiales": [
+      "Lino de alta calidad"
+    ],
+    "dimensiones": "20x30 cm"
+  },
+  {
+    "id": "2065",
+    "nombre": "Bolso Amberes",
+    "precio": 22,
+    "categoria": "bolsos",
+    "imagen": "Bolso-Amberes.webp",
+    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "materiales": [
+      "Lino de alta calidad"
+    ],
+    "dimensiones": "20x30 cm"
+  },
+  {
+    "id": "2068",
+    "nombre": "Bolso Barcelona",
+    "precio": 22,
+    "categoria": "bolsos",
+    "imagen": "Bolso-Barcelona.webp",
+    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "materiales": [
+      "Lino de alta calidad"
+    ],
+    "dimensiones": "20x30 cm"
+  },
+  {
+    "id": "2071",
+    "nombre": "Bolso Budapest Blanco",
+    "precio": 22,
+    "categoria": "bolsos",
+    "imagen": "Bolso-Budapest-Blanco.webp",
+    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "materiales": [
+      "Lino de alta calidad"
+    ],
+    "dimensiones": "20x30 cm"
+  },
+  {
+    "id": "2073",
+    "nombre": "Bolso Dublín H",
+    "precio": 22,
+    "categoria": "bolsos",
+    "imagen": "Bolso-Dublin-H.webp",
+    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "materiales": [
+      "Lino de alta calidad"
+    ],
+    "dimensiones": "20x30 cm"
+  },
+  {
+    "id": "2077",
+    "nombre": "Bolso Escocés Verde",
+    "precio": 22,
+    "categoria": "bolsos",
+    "imagen": "Bolso-Escoces-Verde.webp",
+    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "materiales": [
+      "Lino de alta calidad"
+    ],
+    "dimensiones": "20x30 cm"
+  },
+  {
+    "id": "2079",
+    "nombre": "Bolso Lisboa",
+    "precio": 22,
+    "categoria": "bolsos",
+    "imagen": "Bolso-Lisboa.webp",
+    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "materiales": [
+      "Lino de alta calidad"
+    ],
+    "dimensiones": "20x30 cm"
+  },
+  {
+    "id": "2082",
+    "nombre": "Bolso Madrid",
+    "precio": 22,
+    "categoria": "bolsos",
+    "imagen": "Bolso-Madrid.webp",
+    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "materiales": [
+      "Lino de alta calidad"
+    ],
+    "dimensiones": "20x30 cm"
+  },
+  {
+    "id": "2086",
+    "nombre": "Bolso Mallorca",
+    "precio": 22,
+    "categoria": "bolsos",
+    "imagen": "Bolso-Mallorca.webp",
+    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "materiales": [
+      "Lino de alta calidad"
+    ],
+    "dimensiones": "20x30 cm"
+  },
+  {
+    "id": "2090",
+    "nombre": "Bolso Santorini",
+    "precio": 22,
+    "categoria": "bolsos",
+    "imagen": "Bolso-Santorini.webp",
+    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "materiales": [
+      "Lino de alta calidad"
+    ],
+    "dimensiones": "20x30 cm"
+  },
+  {
+    "id": "2095",
+    "nombre": "Bolso Varsovia M1",
+    "precio": 22,
+    "categoria": "bolsos",
+    "imagen": "Bolso-Varsovia.webp",
+    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Diseño exclusivo de edición limitada.",
+    "materiales": [
+      "Lino de alta calidad"
+    ],
+    "dimensiones": "20x30 cm"
+  },
+  {
+    "id": "2099",
+    "nombre": "Bolso Varsovia M2",
+    "precio": 22,
+    "categoria": "bolsos",
+    "imagen": "Bolso-Varsovia-2.webp",
+    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Diseño exclusivo de edición limitada.",
+    "materiales": [
+      "Lino de alta calidad"
+    ],
+    "dimensiones": "20x30 cm"
+  },
+  {
+    "id": "2101",
+    "nombre": "Cinta Elástica",
+    "precio": 12,
+    "categoria": "etnicas",
+    "imagen": "Cinta-Elastica.webp",
+    "descripcion": "Zinta para móvil con mosquetón y adaptador incluido. Gran durabilidad y practicidad.",
+    "materiales": [
+      "Elástico de alta calidad"
+    ]
+  },
+  {
+    "id": "2104",
+    "nombre": "Cinta Fluor Coral",
+    "precio": 12,
+    "categoria": "etnicas",
+    "imagen": "Cinta-Etnica-Fluor-Coral.webp",
+    "descripcion": "Zinta étnica para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tejido étnico"
+    ]
+  },
+  {
+    "id": "2107",
+    "nombre": "Cinta Fluor Amarilla",
+    "precio": 12,
+    "categoria": "etnicas",
+    "imagen": "Cinta-Etnica-Fluor-Amarilla.webp",
+    "descripcion": "Zinta étnica para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tejido étnico"
+    ]
+  },
+  {
+    "id": "2109",
+    "nombre": "Cinta Fluor Naranja",
+    "precio": 12,
+    "categoria": "etnicas",
+    "imagen": "Cinta-Etnica-Fluor-Naranja.webp",
+    "descripcion": "Zinta étnica para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tejido étnico"
+    ]
+  },
+  {
+    "id": "2111",
+    "nombre": "Cinta Fluor Verde",
+    "precio": 12,
+    "categoria": "etnicas",
+    "imagen": "Cinta-Fluor-Verde.webp",
+    "descripcion": "Zinta étnica para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tejido étnico"
+    ]
+  },
+  {
+    "id": "2113",
+    "nombre": "Cinta Zigzag Marino",
+    "precio": 12,
+    "categoria": "etnicas",
+    "imagen": "Cinta-Zigzag-Marino.webp",
+    "descripcion": "Zinta étnica para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tejido étnico"
+    ]
+  },
+  {
+    "id": "2115",
+    "nombre": "Cinta Fucsia",
+    "precio": 12,
+    "categoria": "etnicas",
+    "imagen": "Cinta-Etnica-Fucsia.webp",
+    "descripcion": "Zinta étnica para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tejido étnico"
+    ]
+  },
+  {
+    "id": "2117",
+    "nombre": "Cinta Turquesa",
+    "precio": 12,
+    "categoria": "etnicas",
+    "imagen": "Cinta-Etnica-Turquesa.webp",
+    "descripcion": "Zinta étnica para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tejido étnico"
+    ]
+  },
+  {
+    "id": "2119",
+    "nombre": "Cinta Beige",
+    "precio": 12,
+    "categoria": "etnicas",
+    "imagen": "Cinta-Etnica-Beige.webp",
+    "descripcion": "Zinta étnica para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tejido étnico"
+    ]
+  },
+  {
+    "id": "2121",
+    "nombre": "Cinta Zigzag Caza",
+    "precio": 12,
+    "categoria": "etnicas",
+    "imagen": "Cinta-Zigzag-Caza.webp",
+    "descripcion": "Zinta étnica para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tejido étnico"
+    ]
+  },
+  {
+    "id": "2123",
+    "nombre": "Cinta Mostaza",
+    "precio": 12,
+    "categoria": "etnicas",
+    "imagen": "Cinta-Etnica-Mostaza.webp",
+    "descripcion": "Zinta étnica para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tejido étnico"
+    ]
+  },
+  {
+    "id": "2125",
+    "nombre": "Cinta Teja",
+    "precio": 12,
+    "categoria": "etnicas",
+    "imagen": "Cinta-Etnica-Teja.webp",
+    "descripcion": "Zinta étnica para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tejido étnico"
+    ]
+  },
+  {
+    "id": "2127",
+    "nombre": "Cinta Zigzag Turquesa",
+    "precio": 12,
+    "categoria": "etnicas",
+    "imagen": "Cinta-Zigzag-Turquesa.webp",
+    "descripcion": "Zinta étnica para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tejido étnico"
+    ]
+  },
+  {
+    "id": "2129",
+    "nombre": "Cinta Zigzag Teja",
+    "precio": 12,
+    "categoria": "etnicas",
+    "imagen": "Cinta-Zigzag-Teja.webp",
+    "descripcion": "Zinta étnica para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tejido étnico"
+    ]
+  },
+  {
+    "id": "2133",
+    "nombre": "Cinta Azulón",
+    "precio": 12,
+    "categoria": "etnicas",
+    "imagen": "Cinta-Etnica-Azulon.webp",
+    "descripcion": "Zinta étnica para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tejido étnico"
+    ]
+  },
+  {
+    "id": "2135",
+    "nombre": "Cinta Manzana",
+    "precio": 12,
+    "categoria": "etnicas",
+    "imagen": "Cinta-Etnica-Manzana.webp",
+    "descripcion": "Zinta étnica para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tejido étnico"
+    ]
+  },
+  {
+    "id": "2137",
+    "nombre": "Cinta Zigzag Negro",
+    "precio": 12,
+    "categoria": "etnicas",
+    "imagen": "Cinta-Zigzag-Negro.webp",
+    "descripcion": "Zinta étnica para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tejido étnico"
+    ]
+  },
+  {
+    "id": "2140",
+    "nombre": "Cinta Marino",
+    "precio": 12,
+    "categoria": "etnicas",
+    "imagen": "Cinta-Etnica-Marino.webp",
+    "descripcion": "Zinta étnica para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tejido étnico"
+    ]
+  },
+  {
+    "id": "2143",
+    "nombre": "Cinta Fina Botella",
+    "precio": 12,
+    "categoria": "etnicas",
+    "imagen": "cinta-Fina-Botella.webp",
+    "descripcion": "Zinta fina para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tejido fino"
+    ]
+  },
+  {
+    "id": "2145",
+    "nombre": "Cinta Fina Marrón",
+    "precio": 12,
+    "categoria": "etnicas",
+    "imagen": "Cinta-fina-marron.webp",
+    "descripcion": "Zinta fina para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tejido fino"
+    ]
+  },
+  {
+    "id": "2147",
+    "nombre": "Cinta Fina Negra",
+    "precio": 12,
+    "categoria": "etnicas",
+    "imagen": "cinta-fina-negra.webp",
+    "descripcion": "Zinta fina para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tejido fino"
+    ]
+  },
+  {
+    "id": "2149",
+    "nombre": "Cinta Fina Zigzag Beige",
+    "precio": 12,
+    "categoria": "etnicas",
+    "imagen": "cinta-fina-Zigzag-Beige.webp",
+    "descripcion": "Zinta fina para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tejido fino"
+    ]
+  },
+  {
+    "id": "2151",
+    "nombre": "Cinta Fina Zigzag Negra",
+    "precio": 12,
+    "categoria": "etnicas",
+    "imagen": "Cinta-fina-Zigzag-Negra.webp",
+    "descripcion": "Zinta fina para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tejido fino"
+    ]
+  },
+  {
+    "id": "2153",
+    "nombre": "Cinta Zigzag Verde-Beige",
+    "precio": 12,
+    "categoria": "etnicas",
+    "imagen": "Cinta-Zigzag-verde-beige.webp",
+    "descripcion": "Zinta étnica para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tejido étnico"
+    ]
+  },
+  {
+    "id": "2156",
+    "nombre": "Cinta Marruecos",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Marruecos.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido. Tejido exclusivo de alta calidad.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2158",
+    "nombre": "Cinta Estambul",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Estambul.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2161",
+    "nombre": "Cinta Roma",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Roma.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2166",
+    "nombre": "Cinta Atenas V",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Atenas-V.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2168",
+    "nombre": "Cinta Atenas O",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Atenas-O.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2171",
+    "nombre": "Cinta Santorini",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Santorini.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2176",
+    "nombre": "Cinta Dublín H",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Dublin-H.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2179",
+    "nombre": "Cinta Dublín V",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Dublin-V.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2181",
+    "nombre": "Cinta Bruselas",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Bruselas.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2184",
+    "nombre": "Cinta Amberes",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Amberes.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2186",
+    "nombre": "Cinta Ibiza Azul",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Ibiza-Azul.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2188",
+    "nombre": "Cinta Ibiza Rosa",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Ibiza-Rosa.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2190",
+    "nombre": "Cinta Londres",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Londres.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2193",
+    "nombre": "Cinta Nueva York",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Nueva-York.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2195",
+    "nombre": "Cinta Lisboa",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Lisboa.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2199",
+    "nombre": "Cinta Viena",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Viena.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2201",
+    "nombre": "Cinta Menorca",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Menorca.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2204",
+    "nombre": "Cinta París",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Paris.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2206",
+    "nombre": "Cinta Berlín",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Berlin.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2209",
+    "nombre": "Cinta Bogotá",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Bogota.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2211",
+    "nombre": "Cinta Madrid",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Madrid.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2213",
+    "nombre": "Cinta Budapest Verde",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Budapest-Verde.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2216",
+    "nombre": "Cinta Budapest Blanco",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Budapest-Blanco.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2218",
+    "nombre": "Cinta Barcelona",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Barcelona_.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2220",
+    "nombre": "Cinta Varsovia",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Varsovia.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2222",
+    "nombre": "Cinta Mallorca",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Mallorca.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2224",
+    "nombre": "Cinta Kenia Negro",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Kenia-Negro.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2226",
+    "nombre": "Cinta Kenia Blanco",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Kenia-Blanco.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2228",
+    "nombre": "Cinta Escocia Rojo",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Escocia-Rojo.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2230",
+    "nombre": "Cinta Escocia Verde",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Escocia-Verde.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2232",
+    "nombre": "Cinta Formentera",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "Cinta-Formentera.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  },
+  {
+    "id": "2234",
+    "nombre": "Cinta Sahara",
+    "precio": 15,
+    "categoria": "tapiceria",
+    "imagen": "CINTA-SAHARA-.webp",
+    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
+    "materiales": [
+      "Tapicería exclusiva"
+    ]
+  }
+]
