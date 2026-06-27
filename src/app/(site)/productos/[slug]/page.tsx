@@ -12,32 +12,9 @@ import {
 } from "@/sanity/queries";
 import AddToCartButton from "@/components/AddToCartButton";
 import ProductGrid from "@/components/ProductGrid";
+import CintaSpecs from "@/components/CintaSpecs";
+import { legacyToProduct, slugify, categoryLabels } from "@/lib/catalog";
 import productosData from "@/data/productos.json";
-
-function slugify(text: string) {
-  return text
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "");
-}
-
-function legacyToProduct(p: LegacyProduct): Product {
-  return {
-    _id: p.id,
-    nombre: p.nombre,
-    slug: slugify(p.nombre),
-    precio: p.precio,
-    categoria: p.categoria,
-    imagen: { _type: "image", asset: { _ref: "", _type: "reference" } },
-    descripcion: p.descripcion,
-    materiales: p.materiales,
-    dimensiones: p.dimensiones,
-    stock: 10,
-    oldId: p.id,
-  };
-}
 
 interface Props {
   params: { slug: string };
@@ -90,18 +67,15 @@ export default async function ProductPage({ params }: Props) {
       .map(legacyToProduct);
   }
 
-  const categoryLabels: Record<string, string> = {
-    bolsos: "Bolsos",
-    etnicas: "Zintas Étnicas",
-    tapiceria: "Zintas Tapicería",
-  };
-
-  const mainImageUrl =
-    isSanityConfigured && product.imagen?.asset?._ref
+  const mainImageUrl = product.imagenUrl
+    ? product.imagenUrl
+    : isSanityConfigured && product.imagen?.asset?._ref
       ? urlFor(product.imagen).width(800).height(800).url()
       : "/images/productos/Logo.webp";
 
   const outOfStock = product.stock !== undefined && product.stock <= 0;
+  const isCinta =
+    product.categoria === "etnicas" || product.categoria === "tapiceria";
 
   return (
     <div className="bg-cream min-h-screen">
@@ -109,7 +83,7 @@ export default async function ProductPage({ params }: Props) {
         {/* Breadcrumb */}
         <nav className="mb-8 text-sm text-mid">
           <Link href="/" className="hover:text-terracotta transition-colors">
-            Inicio
+            Home
           </Link>
           <span className="mx-2">/</span>
           <Link
@@ -162,35 +136,42 @@ export default async function ProductPage({ params }: Props) {
               {product.precio.toFixed(2)}€
             </p>
 
-            <p className="mt-6 text-mid leading-relaxed">
-              {product.descripcion}
-            </p>
+            {isCinta ? (
+              /* Descripción estándar + materiales y medidas con iconos */
+              <CintaSpecs />
+            ) : (
+              <>
+                <p className="mt-6 text-mid leading-relaxed">
+                  {product.descripcion}
+                </p>
 
-            {/* Materials */}
-            {product.materiales && product.materiales.length > 0 && (
-              <div className="mt-6">
-                <h3 className="text-sm font-medium text-texto uppercase tracking-wide">
-                  Materiales
-                </h3>
-                <div className="flex flex-wrap gap-2 mt-2">
-                  {product.materiales.map((mat) => (
-                    <span
-                      key={mat}
-                      className="px-3 py-1 bg-white rounded-full text-sm text-mid border border-border"
-                    >
-                      {mat}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            )}
+                {/* Materials */}
+                {product.materiales && product.materiales.length > 0 && (
+                  <div className="mt-6">
+                    <h3 className="text-sm font-medium text-texto uppercase tracking-wide">
+                      Materiales
+                    </h3>
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      {product.materiales.map((mat) => (
+                        <span
+                          key={mat}
+                          className="px-3 py-1 bg-white rounded-full text-sm text-mid border border-border"
+                        >
+                          {mat}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
-            {/* Dimensions */}
-            {product.dimensiones && (
-              <p className="mt-4 text-sm text-mid">
-                <span className="font-medium text-texto">Dimensiones:</span>{" "}
-                {product.dimensiones}
-              </p>
+                {/* Dimensions */}
+                {product.dimensiones && (
+                  <p className="mt-4 text-sm text-mid">
+                    <span className="font-medium text-texto">Dimensiones:</span>{" "}
+                    {product.dimensiones}
+                  </p>
+                )}
+              </>
             )}
 
             {/* Actions */}

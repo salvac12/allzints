@@ -2,15 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 const footerLinks = [
-  { label: "Tienda", href: "/productos" },
   { label: "Nosotros", href: "/nosotros" },
   { label: "Contacto", href: "/nosotros#contacto" },
-];
-
-const legalLinks = [
-  { label: "Política de privacidad", href: "/privacidad" },
-  { label: "Términos y condiciones", href: "/terminos" },
-  { label: "Política de cookies", href: "/cookies" },
 ];
 
 export default function Footer() {
@@ -50,10 +43,10 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Social + Legal */}
+          {/* Social */}
           <div>
             <h3 className="font-heading text-white text-lg mb-4">Síguenos</h3>
-            <div className="flex gap-4 mb-8">
+            <div className="flex gap-4">
               {/* Instagram */}
               <a
                 href="https://www.instagram.com/allzints/"
@@ -91,19 +84,6 @@ export default function Footer() {
                 </svg>
               </a>
             </div>
-
-            <ul className="space-y-2">
-              {legalLinks.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-white/40 hover:text-white/60 transition-colors text-xs"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
           </div>
         </div>
 

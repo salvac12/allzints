@@ -5,12 +5,13 @@ import Image from "next/image";
 import { useState } from "react";
 import { useCartStore, useCartCount } from "@/store/cartStore";
 
-const navLinks = [
-  { label: "Zintas", href: "/productos?categoria=etnicas" },
+const leftLinks = [
+  { label: "Zintas", href: "/productos?categoria=zintas" },
   { label: "Bolsos", href: "/productos?categoria=bolsos" },
-  { label: "Nosotros", href: "/nosotros" },
-  { label: "Contacto", href: "/nosotros#contacto" },
+  { label: "Otros", href: "/productos?categoria=otros" },
 ];
+
+const rightLinks = [{ label: "Nosotros", href: "/nosotros" }];
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -21,40 +22,57 @@ export default function Navbar() {
     <header className="sticky top-0 z-50">
       {/* Announcement bar */}
       <div className="bg-terracotta text-white text-center py-2 text-sm font-body">
-        Envío gratis en compras superiores a 50€
+        Envío a península: ordinario 3€ (5-7 días) · rápido 5€ (48-72h)
       </div>
 
       {/* Main nav */}
       <nav className="bg-cream/95 backdrop-blur-md border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            {/* Logo */}
-            <Link href="/" className="flex-shrink-0">
-              <Image
-                src="/images/productos/Logo.webp"
-                alt="All Zints"
-                width={120}
-                height={40}
-                className="h-10 w-auto"
-                priority
-              />
-            </Link>
-
-            {/* Desktop links */}
-            <div className="hidden md:flex items-center gap-8">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-texto hover:text-terracotta transition-colors text-sm font-medium tracking-wide"
-                >
-                  {link.label}
-                </Link>
-              ))}
+            {/* Left: logo + Zintas / Bolsos */}
+            <div className="flex items-center gap-8">
+              <Link href="/" className="flex-shrink-0">
+                <Image
+                  src="/images/productos/Logo.webp"
+                  alt="All Zints"
+                  width={120}
+                  height={40}
+                  className="h-10 w-auto"
+                  priority
+                />
+              </Link>
+              <div className="hidden md:flex items-center gap-8">
+                {leftLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="text-texto hover:text-terracotta transition-colors text-lg font-semibold tracking-wide uppercase"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
             </div>
 
-            {/* Right side: cart + mobile toggle */}
-            <div className="flex items-center gap-4">
+            {/* Right side: Nosotros / Blog + cart + mobile toggle */}
+            <div className="flex items-center gap-6">
+              <div className="hidden md:flex items-center gap-6">
+                {rightLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="text-texto hover:text-terracotta transition-colors text-sm font-medium tracking-wide"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+                <span
+                  className="text-mid/60 text-sm font-medium tracking-wide cursor-default"
+                  title="Próximamente"
+                >
+                  Blog
+                </span>
+              </div>
               {/* Cart button */}
               <button
                 onClick={openCart}
@@ -128,7 +146,17 @@ export default function Navbar() {
         {mobileOpen && (
           <div className="md:hidden border-t border-border bg-cream">
             <div className="px-4 py-4 space-y-3">
-              {navLinks.map((link) => (
+              {leftLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMobileOpen(false)}
+                  className="block text-texto hover:text-terracotta transition-colors text-lg font-semibold uppercase"
+                >
+                  {link.label}
+                </Link>
+              ))}
+              {rightLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
@@ -138,6 +166,9 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
+              <span className="block text-mid/60 text-base font-medium">
+                Blog <span className="text-xs">(próximamente)</span>
+              </span>
             </div>
           </div>
         )}

@@ -1,145 +1,103 @@
-import Link from "next/link";
 import Image from "next/image";
-import type { Product, LegacyProduct } from "@/types/product";
-import ProductGrid from "@/components/ProductGrid";
 import NewsletterForm from "@/components/NewsletterForm";
-import { client, isSanityConfigured } from "@/sanity/client";
-import { featuredProductsQuery } from "@/sanity/queries";
-import productosData from "@/data/productos.json";
+import PhotoCarousel from "@/components/PhotoCarousel";
+
+const heroImages = [
+  { src: "/images/productos/Hero-Modelo-Budapest.jpg", alt: "Modelo con cinta de móvil Budapest" },
+  { src: "/images/productos/Hero-Lisboa.jpg", alt: "Bolso y cinta de móvil Lisboa" },
+  { src: "/images/productos/Hero-Modelo-NY.jpg", alt: "Modelo con bolso Nueva York" },
+  { src: "/images/productos/Hero-Modelo-Santorini.jpg", alt: "Modelo con bolso Santorini" },
+  { src: "/images/productos/Hero-Modelo-Mallorca.jpg", alt: "Modelo con bolso Mallorca" },
+];
+
+const galleryImages = [
+  { src: "/images/productos/Cinta-Etnica-Fucsia.webp", alt: "Zinta étnica fucsia" },
+  { src: "/images/productos/Bolso-Marrackech.webp", alt: "Bolso Marrakech" },
+  { src: "/images/productos/Cinta-Ibiza-Rosa.webp", alt: "Zinta Ibiza rosa" },
+  { src: "/images/productos/Bolso-Atenas.webp", alt: "Bolso Atenas" },
+  { src: "/images/productos/Cinta-Etnica-Mostaza.webp", alt: "Zinta étnica mostaza" },
+  { src: "/images/productos/Bolso-Nueva-York.webp", alt: "Bolso Nueva York" },
+  { src: "/images/productos/Cinta-Santorini.webp", alt: "Zinta Santorini" },
+  { src: "/images/productos/Bolso-Lisboa.webp", alt: "Bolso Lisboa" },
+];
 
 const testimonials = [
   {
-    name: "Laura M.",
-    text: "Me encanta mi bolso de All Zints. Es precioso y se nota que está hecho con mucho cariño. Cada puntada tiene alma.",
-    location: "Madrid",
+    name: "Rosa López",
+    text: "¡Las cintas de móvil son una maravilla! Me encanta cómo sujetan el móvil de forma segura sin que se caiga, y el diseño es súper elegante. Perfectas para el día a día, las recomiendo al 100%.",
   },
   {
-    name: "Carmen R.",
-    text: "La cinta para el móvil es súper práctica y original. Recibo cumplidos constantemente. Sin duda repetiré.",
-    location: "Barcelona",
+    name: "María Ruiz",
+    text: "Bonitas, funcionales y muy cómodas. La cinta cuelga-móvil me ha salvado de extraviar el teléfono. Envío rápido y producto tal como se describe en la web.",
   },
   {
-    name: "Ana P.",
-    text: "Calidad increíble y un diseño que no encuentras en ningún sitio. Compré dos bolsos y son perfectos para el verano.",
-    location: "Valencia",
+    name: "Laura Gómez",
+    text: "¡Adoro mi cinta cuelga móvil! Es ligera y con un diseño precioso que va con todo. Ahora llevo el móvil siempre a mano sin miedo a que se me caiga, ideal para salir a correr o pasear. ¡Feliz con mi compra!",
+  },
+  {
+    name: "David Herrera",
+    text: "¡La cinta cuelga móvil es genial para una persona como yo! La uso en el gimnasio y para ir en bici. Diseño práctico y resistente, la mejor compra que he hecho últimamente.",
   },
 ];
 
-function legacyToProduct(p: LegacyProduct): Product {
-  return {
-    _id: p.id,
-    nombre: p.nombre,
-    slug: p.nombre.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, ""),
-    precio: p.precio,
-    categoria: p.categoria,
-    imagen: { _type: "image", asset: { _ref: "", _type: "reference" } },
-    descripcion: p.descripcion,
-    materiales: p.materiales,
-    dimensiones: p.dimensiones,
-    stock: 10,
-    oldId: p.id,
-  };
-}
-
-export default async function Home() {
-  let latestProducts: Product[];
-  if (isSanityConfigured) {
-    latestProducts = await client.fetch(featuredProductsQuery);
-  } else {
-    const legacy = productosData as LegacyProduct[];
-    latestProducts = legacy.slice(-8).reverse().map(legacyToProduct);
-  }
-
+export default function Home() {
   return (
     <>
-      {/* Hero */}
+      {/* Hero con fotos que ruedan */}
       <section className="relative bg-dark text-white overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/95 to-dark/70" />
+        <div className="absolute inset-0">
+          <PhotoCarousel
+            images={heroImages}
+            className="h-full w-full"
+            sizes="100vw"
+            priority
+            showDots={false}
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-dark/90 via-dark/60 to-dark/20" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36 lg:py-44">
           <div className="max-w-2xl">
             <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight text-white">
               Accesorios diferentes y artesanales
             </h1>
-            <p className="mt-4 text-lg sm:text-xl text-white/70 font-heading italic">
+            <p className="mt-4 text-lg sm:text-xl text-white/80 font-heading italic">
               con telas étnicas
             </p>
-            <p className="mt-6 text-white/60 max-w-lg leading-relaxed">
+            <p className="mt-6 text-white/70 max-w-lg leading-relaxed">
               Cada pieza de All Zints está confeccionada a mano con materiales
               seleccionados. Bolsos, cintas para móvil y accesorios que cuentan
               una historia.
             </p>
-            <Link
-              href="/productos"
-              className="inline-block mt-8 bg-terracotta hover:bg-terracotta-light text-white px-8 py-3.5 rounded-card font-medium transition-colors text-lg"
-            >
-              Ver la colección
-            </Link>
           </div>
         </div>
       </section>
 
-      {/* Quiénes somos */}
+      {/* Galería de fotos */}
       <section className="py-20 md:py-28">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="text-terracotta font-medium text-sm tracking-widest uppercase">
-                Nuestra historia
-              </span>
-              <h2 className="font-heading text-3xl md:text-4xl text-texto mt-3 leading-tight">
-                Accesorios con alma mediterránea
-              </h2>
-              <p className="mt-6 text-mid leading-relaxed">
-                All Zints nace en 2023 de la mano de Paula y María, dos amigas
-                apasionadas por la artesanía y el diseño textil. Desde nuestro
-                taller en España, creamos cada pieza de forma artesanal,
-                combinando telas étnicas y de tapicería con un estilo
-                mediterráneo y actual.
-              </p>
-              <p className="mt-4 text-mid leading-relaxed">
-                Nuestro nombre juega con la palabra &quot;cintas&quot; — las
-                llamamos &quot;zintas&quot; porque cada una tiene su propia
-                personalidad. No encontrarás dos piezas exactamente iguales.
-              </p>
-              <Link
-                href="/nosotros"
-                className="inline-block mt-6 text-terracotta hover:text-terracotta-light font-medium transition-colors border-b border-terracotta hover:border-terracotta-light"
-              >
-                Conoce nuestra historia
-              </Link>
-            </div>
-            <div className="relative aspect-[4/5] rounded-card overflow-hidden shadow-lg">
-              <Image
-                src="/images/productos/Home_seccion_about.webp"
-                alt="Paula y María, fundadoras de All Zints"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Últimos productos */}
-      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="text-terracotta font-medium text-sm tracking-widest uppercase">
-              Novedades
+              Nuestras creaciones
             </span>
             <h2 className="font-heading text-3xl md:text-4xl text-texto mt-3">
-              Últimos productos
+              Hechas a mano, una a una
             </h2>
           </div>
-          <ProductGrid products={latestProducts} />
-          <div className="text-center mt-12">
-            <Link
-              href="/productos"
-              className="inline-block bg-dark hover:bg-texto text-white px-8 py-3 rounded-card font-medium transition-colors"
-            >
-              Ver todos los productos
-            </Link>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+            {galleryImages.map((img) => (
+              <div
+                key={img.src}
+                className="relative aspect-square rounded-card overflow-hidden shadow-sm"
+              >
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover object-center hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -189,10 +147,10 @@ export default async function Home() {
                 </svg>
               </div>
               <h3 className="font-heading text-lg text-texto">
-                Envío gratis +50€
+                Envío a toda España
               </h3>
               <p className="text-mid text-sm">
-                Envío gratuito en pedidos superiores a 50€ en toda España
+                Envío ordinario (3€) o rápido (5€) a península
               </p>
             </div>
             <div className="space-y-2">
@@ -229,15 +187,12 @@ export default async function Home() {
               Testimonios
             </span>
             <h2 className="font-heading text-3xl md:text-4xl text-texto mt-3">
-              Lo que dicen nuestras clientas
+              Lo que dicen los clientes
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {testimonials.map((t) => (
-              <div
-                key={t.name}
-                className="bg-white p-8 rounded-card shadow-sm"
-              >
+              <div key={t.name} className="bg-white p-8 rounded-card shadow-sm">
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
                     <svg
@@ -260,7 +215,6 @@ export default async function Home() {
                 </p>
                 <div className="mt-6 pt-4 border-t border-border">
                   <p className="font-medium text-texto">{t.name}</p>
-                  <p className="text-sm text-mid">{t.location}</p>
                 </div>
               </div>
             ))}

@@ -4,23 +4,8 @@ import type { Product, LegacyProduct } from "@/types/product";
 import { client, isSanityConfigured } from "@/sanity/client";
 import { allProductsQuery } from "@/sanity/queries";
 import CatalogClient from "@/components/CatalogClient";
+import { legacyToProduct } from "@/lib/catalog";
 import productosData from "@/data/productos.json";
-
-function legacyToProduct(p: LegacyProduct): Product {
-  return {
-    _id: p.id,
-    nombre: p.nombre,
-    slug: p.nombre.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, ""),
-    precio: p.precio,
-    categoria: p.categoria,
-    imagen: { _type: "image", asset: { _ref: "", _type: "reference" } },
-    descripcion: p.descripcion,
-    materiales: p.materiales,
-    dimensiones: p.dimensiones,
-    stock: 10,
-    oldId: p.id,
-  };
-}
 
 export const metadata: Metadata = {
   title: "Nuestra Colección",

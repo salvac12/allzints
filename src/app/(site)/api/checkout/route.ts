@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import type { ShippingInfo, OrderItem } from "@/types/order";
+import type { ShippingInfo, OrderItem, ShippingMethod } from "@/types/order";
+import { SHIPPING_OPTIONS } from "@/types/order";
 import { createClient } from "next-sanity";
 import { apiVersion, dataset, projectId } from "@/sanity/env";
 import { productPriceQuery } from "@/sanity/queries";
@@ -20,18 +21,27 @@ const serverClient = sanityConfigured
 interface CheckoutBody {
   items: OrderItem[];
   shipping: ShippingInfo;
+  shippingMethod: ShippingMethod;
   total: number;
 }
 
 export async function POST(request: NextRequest) {
   try {
     const body: CheckoutBody = await request.json();
-    const { items, shipping, total } = body;
+    const { items, shipping, shippingMethod, total } = body;
 
     // Validate
     if (!items || items.length === 0) {
       return NextResponse.json(
         { error: "El carrito está vacío" },
+        { status: 400 }
+      );
+    }
+
+    const shippingOption = SHIPPING_OPTIONS[shippingMethod];
+    if (!shippingOption) {
+      return NextResponse.json(
+        { error: "Método de envío no válido" },
         { status: 400 }
       );
     }
@@ -84,7 +94,9 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    if (Math.abs(serverTotal - total) > 0.01) {
+    const serverGrandTotal = serverTotal + shippingOption.coste;
+
+    if (Math.abs(serverGrandTotal - total) > 0.01) {
       return NextResponse.json(
         { error: "Los precios han cambiado. Recarga la página e inténtalo de nuevo." },
         { status: 400 }
@@ -110,7 +122,7 @@ export async function POST(request: NextRequest) {
         },
         body: JSON.stringify({
           checkout_reference: orderId,
-          amount: parseFloat(serverTotal.toFixed(2)),
+          amount: parseFloat(serverGrandTotal.toFixed(2)),
           currency: "EUR",
           merchant_code: process.env.SUMUP_MERCHANT_CODE,
           description: `All Zints — ${description}`.slice(0, 140),
@@ -135,7 +147,12 @@ export async function POST(request: NextRequest) {
     console.log("=== NUEVO PEDIDO ===");
     console.log("Order ID:", orderId);
     console.log("SumUp Checkout ID:", checkout.id);
-    console.log("Total:", serverTotal.toFixed(2), "€");
+    console.log(
+      "Envío:",
+      shippingOption.label,
+      `(${shippingOption.coste.toFixed(2)} €)`
+    );
+    console.log("Total:", serverGrandTotal.toFixed(2), "€");
     console.log("Cliente:", shipping.nombre, shipping.apellidos);
     console.log("Email:", shipping.email);
     console.log("Teléfono:", shipping.telefono);

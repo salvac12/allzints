@@ -154,20 +154,9 @@ export default function CartDrawer() {
           {/* Footer */}
           {items.length > 0 && (
             <div className="border-t border-border px-6 py-4 space-y-4">
-              {total < 50 && (
-                <p className="text-sm text-mid text-center">
-                  Te faltan{" "}
-                  <span className="font-medium text-terracotta">
-                    {(50 - total).toFixed(2)}€
-                  </span>{" "}
-                  para envío gratis
-                </p>
-              )}
-              {total >= 50 && (
-                <p className="text-sm text-green-700 text-center font-medium">
-                  Tienes envío gratis
-                </p>
-              )}
+              <p className="text-sm text-mid text-center">
+                Gastos de envío calculados al finalizar la compra
+              </p>
               <div className="flex items-center justify-between text-lg">
                 <span className="font-heading text-texto">Subtotal</span>
                 <span className="font-heading text-terracotta font-semibold">

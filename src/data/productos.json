@@ -2,7 +2,7 @@
   {
     "id": "1596",
     "nombre": "Bolso Atenas",
-    "precio": 22,
+    "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Atenas.webp",
     "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad. Su diseño minimalista y sofisticado lo hace perfecto para cualquier ocasión.",
@@ -12,22 +12,9 @@
     "dimensiones": "20x30 cm"
   },
   {
-    "id": "1598",
-    "nombre": "Bolso beige y negro Lino",
-    "precio": 25,
-    "categoria": "bolsos",
-    "imagen": "Bolso-beige-y-negro-Lino.webp",
-    "descripcion": "Bolso artesanal confeccionado en tela jacquard de alta calidad. Forrado con tela de toldo para mayor resistencia y fácil limpieza. Diseño exclusivo con estampado étnico.",
-    "materiales": [
-      "Algodón",
-      "Poliéster"
-    ],
-    "dimensiones": "20x30 cm"
-  },
-  {
     "id": "1601",
     "nombre": "Bolso Ibiza Azul",
-    "precio": 22,
+    "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Ibiza-Azul.webp",
     "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
@@ -39,7 +26,7 @@
   {
     "id": "1603",
     "nombre": "Bolso Ibiza Rosa",
-    "precio": 22,
+    "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Ibiza-Rosa.webp",
     "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
@@ -51,7 +38,7 @@
   {
     "id": "1605",
     "nombre": "Bolso Londres",
-    "precio": 22,
+    "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Londres.webp",
     "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
@@ -63,7 +50,7 @@
   {
     "id": "1607",
     "nombre": "Bolso Marrakech",
-    "precio": 22,
+    "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Marrackech.webp",
     "descripcion": "Elegante bolso fabricado en lino de alta calidad. Diseño minimalista y sofisticado.",
@@ -75,7 +62,7 @@
   {
     "id": "1609",
     "nombre": "Bolso Menorca",
-    "precio": 22,
+    "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Menorca.webp",
     "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
@@ -87,7 +74,7 @@
   {
     "id": "1611",
     "nombre": "Bolso Nueva York",
-    "precio": 22,
+    "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Nueva-York.webp",
     "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
@@ -99,7 +86,7 @@
   {
     "id": "1613",
     "nombre": "Bolso París",
-    "precio": 22,
+    "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Paris-1.webp",
     "descripcion": "Elegante bolso fabricado en lino de alta calidad. Diseño minimalista y sofisticado.",
@@ -111,7 +98,7 @@
   {
     "id": "1616",
     "nombre": "Bolso Roma",
-    "precio": 22,
+    "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Roma.webp",
     "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
@@ -123,7 +110,7 @@
   {
     "id": "1619",
     "nombre": "Bolso Viena",
-    "precio": 22,
+    "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Viena.webp",
     "descripcion": "Elegante bolso fabricado en lino de alta calidad. Diseño minimalista y sofisticado.",
@@ -135,7 +122,7 @@
   {
     "id": "2065",
     "nombre": "Bolso Amberes",
-    "precio": 22,
+    "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Amberes.webp",
     "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
@@ -147,7 +134,7 @@
   {
     "id": "2068",
     "nombre": "Bolso Barcelona",
-    "precio": 22,
+    "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Barcelona.webp",
     "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
@@ -159,7 +146,7 @@
   {
     "id": "2071",
     "nombre": "Bolso Budapest Blanco",
-    "precio": 22,
+    "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Budapest-Blanco.webp",
     "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
@@ -171,7 +158,7 @@
   {
     "id": "2073",
     "nombre": "Bolso Dublín H",
-    "precio": 22,
+    "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Dublin-H.webp",
     "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
@@ -183,7 +170,7 @@
   {
     "id": "2077",
     "nombre": "Bolso Escocés Verde",
-    "precio": 22,
+    "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Escoces-Verde.webp",
     "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
@@ -195,7 +182,7 @@
   {
     "id": "2079",
     "nombre": "Bolso Lisboa",
-    "precio": 22,
+    "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Lisboa.webp",
     "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
@@ -207,7 +194,7 @@
   {
     "id": "2082",
     "nombre": "Bolso Madrid",
-    "precio": 22,
+    "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Madrid.webp",
     "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
@@ -219,7 +206,7 @@
   {
     "id": "2086",
     "nombre": "Bolso Mallorca",
-    "precio": 22,
+    "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Mallorca.webp",
     "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
@@ -231,7 +218,7 @@
   {
     "id": "2090",
     "nombre": "Bolso Santorini",
-    "precio": 22,
+    "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Santorini.webp",
     "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
@@ -243,7 +230,7 @@
   {
     "id": "2095",
     "nombre": "Bolso Varsovia M1",
-    "precio": 22,
+    "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Varsovia.webp",
     "descripcion": "Elegante bolso fabricado en lino de alta calidad. Diseño exclusivo de edición limitada.",
@@ -255,7 +242,7 @@
   {
     "id": "2099",
     "nombre": "Bolso Varsovia M2",
-    "precio": 22,
+    "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Varsovia-2.webp",
     "descripcion": "Elegante bolso fabricado en lino de alta calidad. Diseño exclusivo de edición limitada.",
@@ -408,17 +395,6 @@
     ]
   },
   {
-    "id": "2129",
-    "nombre": "Cinta Zigzag Teja",
-    "precio": 12,
-    "categoria": "etnicas",
-    "imagen": "Cinta-Zigzag-Teja.webp",
-    "descripcion": "Zinta étnica para móvil con mosquetón y adaptador incluido.",
-    "materiales": [
-      "Tejido étnico"
-    ]
-  },
-  {
     "id": "2133",
     "nombre": "Cinta Azulón",
     "precio": 12,
@@ -535,17 +511,6 @@
     "categoria": "tapiceria",
     "imagen": "Cinta-Marruecos.webp",
     "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido. Tejido exclusivo de alta calidad.",
-    "materiales": [
-      "Tapicería exclusiva"
-    ]
-  },
-  {
-    "id": "2158",
-    "nombre": "Cinta Estambul",
-    "precio": 15,
-    "categoria": "tapiceria",
-    "imagen": "Cinta-Estambul.webp",
-    "descripcion": "Zinta de tapicería para móvil con mosquetón y adaptador incluido.",
     "materiales": [
       "Tapicería exclusiva"
     ]

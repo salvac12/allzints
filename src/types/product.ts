@@ -20,6 +20,8 @@ export interface Product {
   precio: number;
   categoria: "bolsos" | "etnicas" | "tapiceria";
   imagen: SanityImage;
+  imagenUrl?: string;
+  galeriaUrls?: string[];
   galeria?: SanityImage[];
   descripcion: string;
   materiales: string[];

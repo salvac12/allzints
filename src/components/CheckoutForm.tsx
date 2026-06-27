@@ -4,7 +4,8 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useCartStore, useCartTotal, useCartCount } from "@/store/cartStore";
-import type { ShippingInfo } from "@/types/order";
+import type { ShippingInfo, ShippingMethod } from "@/types/order";
+import { SHIPPING_OPTIONS } from "@/types/order";
 
 export default function CheckoutForm() {
   const { items, clearCart } = useCartStore();
@@ -12,6 +13,11 @@ export default function CheckoutForm() {
   const count = useCartCount();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [shippingMethod, setShippingMethod] =
+    useState<ShippingMethod>("ordinario");
+
+  const shippingCost = SHIPPING_OPTIONS[shippingMethod].coste;
+  const grandTotal = total + shippingCost;
 
   const [shipping, setShipping] = useState<ShippingInfo>({
     nombre: "",
@@ -50,7 +56,8 @@ export default function CheckoutForm() {
         body: JSON.stringify({
           items: orderItems,
           shipping,
-          total,
+          shippingMethod,
+          total: grandTotal,
         }),
       });
 
@@ -288,21 +295,68 @@ export default function CheckoutForm() {
               ))}
             </div>
 
-            <div className="border-t border-border pt-4 space-y-2">
+            {/* Método de envío */}
+            <div className="border-t border-border pt-4">
+              <h3 className="text-sm font-medium text-texto mb-3">
+                Método de envío
+              </h3>
+              <div className="space-y-2">
+                {(
+                  Object.keys(SHIPPING_OPTIONS) as Array<
+                    keyof typeof SHIPPING_OPTIONS
+                  >
+                ).map((key) => {
+                  const opt = SHIPPING_OPTIONS[key];
+                  const selected = shippingMethod === key;
+                  return (
+                    <label
+                      key={key}
+                      className={`flex items-center justify-between gap-3 p-3 rounded-card border cursor-pointer transition-colors ${
+                        selected
+                          ? "border-terracotta bg-terracotta/5"
+                          : "border-border hover:border-terracotta/50"
+                      }`}
+                    >
+                      <span className="flex items-center gap-3">
+                        <input
+                          type="radio"
+                          name="shippingMethod"
+                          value={key}
+                          checked={selected}
+                          onChange={() => setShippingMethod(key)}
+                          className="accent-terracotta"
+                        />
+                        <span>
+                          <span className="block text-sm font-medium text-texto">
+                            {opt.label}
+                          </span>
+                          <span className="block text-xs text-mid">
+                            {opt.descripcion}
+                          </span>
+                        </span>
+                      </span>
+                      <span className="text-sm font-medium text-texto">
+                        {opt.coste.toFixed(2)}€
+                      </span>
+                    </label>
+                  );
+                })}
+              </div>
+            </div>
+
+            <div className="border-t border-border pt-4 mt-4 space-y-2">
               <div className="flex justify-between text-sm text-mid">
                 <span>Subtotal ({count} artículos)</span>
                 <span>{total.toFixed(2)}€</span>
               </div>
               <div className="flex justify-between text-sm">
                 <span className="text-mid">Envío</span>
-                <span className={total >= 50 ? "text-green-700 font-medium" : "text-mid"}>
-                  {total >= 50 ? "Gratis" : "3.95€"}
-                </span>
+                <span className="text-mid">{shippingCost.toFixed(2)}€</span>
               </div>
               <div className="flex justify-between text-lg font-heading pt-2 border-t border-border">
                 <span className="text-texto">Total</span>
                 <span className="text-terracotta font-semibold">
-                  {(total >= 50 ? total : total + 3.95).toFixed(2)}€
+                  {grandTotal.toFixed(2)}€
                 </span>
               </div>
             </div>
@@ -324,6 +378,19 @@ export default function CheckoutForm() {
             >
               {loading ? "Procesando..." : "Pagar con tarjeta"}
             </button>
+
+            <div className="mt-4 flex items-center justify-center gap-2 flex-wrap">
+              <span className="text-xs text-mid">Pago con tarjeta de crédito:</span>
+              <span className="px-2 py-1 rounded border border-border bg-white text-[10px] font-semibold tracking-wide text-texto">
+                VISA
+              </span>
+              <span className="px-2 py-1 rounded border border-border bg-white text-[10px] font-semibold tracking-wide text-texto">
+                Mastercard
+              </span>
+              <span className="px-2 py-1 rounded border border-border bg-white text-[10px] font-semibold tracking-wide text-texto">
+                SumUp
+              </span>
+            </div>
 
             <p className="mt-3 text-xs text-mid text-center">
               Serás redirigido a SumUp para completar el pago de forma segura.
