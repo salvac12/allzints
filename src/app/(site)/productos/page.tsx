@@ -29,9 +29,6 @@ export default async function ProductosPage() {
           <h1 className="font-heading text-4xl md:text-5xl text-texto">
             Nuestra Colección
           </h1>
-          <p className="mt-3 text-mid">
-            {productos.length} productos artesanales
-          </p>
         </div>
 
         <Suspense

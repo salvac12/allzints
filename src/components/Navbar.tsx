@@ -8,7 +8,6 @@ import { useCartStore, useCartCount } from "@/store/cartStore";
 const leftLinks = [
   { label: "Zintas", href: "/productos?categoria=zintas" },
   { label: "Bolsos", href: "/productos?categoria=bolsos" },
-  { label: "Otros", href: "/productos?categoria=otros" },
 ];
 
 const rightLinks = [

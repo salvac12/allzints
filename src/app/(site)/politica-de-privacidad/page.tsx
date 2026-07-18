@@ -10,23 +10,7 @@ export default function PoliticaPrivacidadPage() {
   return (
     <LegalPage title="Política de Privacidad">
       <h2>Responsable del tratamiento</h2>
-      <ul>
-        <li>
-          <strong>Nombre:</strong> Paula Aristondo Muñiz / María Remedios
-          Sánchez Bernal
-        </li>
-        <li>
-          <strong>NIF:</strong> 71651024K / 05421713S
-        </li>
-        <li>
-          <strong>Dirección:</strong> Paseo de los Parques 6, portal 6, Bajo A.
-          28109 Alcobendas (Madrid)
-        </li>
-        <li>
-          <strong>Correo electrónico:</strong>{" "}
-          <a href="mailto:info@allzints.com">info@allzints.com</a>
-        </li>
-      </ul>
+      <p>AllZints SL</p>
 
       <h2>Finalidad del tratamiento</h2>
       <p>

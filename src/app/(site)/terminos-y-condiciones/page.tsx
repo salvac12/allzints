@@ -20,21 +20,15 @@ export default function TerminosPage() {
       <h2>1. Información general</h2>
       <ul>
         <li>
-          <strong>Titular de la web:</strong> ALL ZINTS
+          <strong>Titular de la web:</strong> AllZints SL
         </li>
         <li>
           <strong>Domicilio social:</strong> Paseo de los Parques 6, portal 6,
           Bajo A. 28109 Alcobendas (Madrid)
         </li>
         <li>
-          <strong>NIF:</strong> 05421713S
-        </li>
-        <li>
           <strong>Correo electrónico de contacto:</strong>{" "}
           <a href="mailto:info@allzints.com">info@allzints.com</a>
-        </li>
-        <li>
-          <strong>Teléfono de contacto:</strong> 629 602 809 / 649 738 682
         </li>
       </ul>
       <p>
@@ -93,7 +87,6 @@ export default function TerminosPage() {
       <ul>
         <li>Tarjeta de crédito/débito (Visa, Mastercard, etc.)</li>
         <li>PayPal</li>
-        <li>Transferencia bancaria</li>
       </ul>
       <p>El pago debe ser completado antes del envío del pedido.</p>
 

@@ -47,10 +47,6 @@ export default function ContactoPage() {
                   </a>
                 </p>
                 <p>
-                  <span className="font-medium text-texto">Teléfono:</span>{" "}
-                  649 738 682 · 629 602 809
-                </p>
-                <p>
                   <span className="font-medium text-texto">WhatsApp:</span>{" "}
                   <a
                     href="https://wa.me/34649738682?text=Hola, tengo una consulta sobre All Zints"

@@ -12,18 +12,11 @@ export default function AvisoLegalPage() {
       <h2>Titular del sitio web</h2>
       <ul>
         <li>
-          <strong>Nombre:</strong> Paula Aristondo Muñiz / María Remedios
-          Sánchez Bernal
-        </li>
-        <li>
-          <strong>NIF:</strong> 71651024K / 05421713S
+          <strong>Titular:</strong> AllZints SL
         </li>
         <li>
           <strong>Dirección:</strong> Paseo de los Parques 6, portal 6, Bajo A.
           28109 Alcobendas (Madrid)
-        </li>
-        <li>
-          <strong>Teléfono:</strong> 649 738 682 / 629 602 809
         </li>
         <li>
           <strong>Correo electrónico:</strong>{" "}
