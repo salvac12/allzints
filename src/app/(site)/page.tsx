@@ -161,7 +161,7 @@ export default function Home() {
                 Envío a toda España
               </h3>
               <p className="text-mid text-sm">
-                Envío ordinario (3€) o rápido (5€) a península
+Envío gratuito en pedidos desde 45€. El coste se calcula en el carrito.
               </p>
             </div>
             <div className="space-y-2">

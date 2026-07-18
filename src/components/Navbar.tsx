@@ -24,7 +24,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50">
       {/* Announcement bar */}
       <div className="bg-terracotta text-white text-center py-2 text-sm font-body">
-        Envío a península: ordinario 3€ (5-7 días) · rápido 5€ (48-72h)
+        Envío gratuito a partir de 45€
       </div>
 
       {/* Main nav */}

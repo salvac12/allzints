@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import type { ShippingInfo, OrderItem, ShippingMethod } from "@/types/order";
-import { SHIPPING_OPTIONS } from "@/types/order";
+import { SHIPPING_OPTIONS, shippingCost } from "@/types/order";
 import { createClient } from "next-sanity";
 import { apiVersion, dataset, projectId } from "@/sanity/env";
 import { productPriceQuery } from "@/sanity/queries";
@@ -55,6 +55,7 @@ export async function POST(request: NextRequest) {
 
     // Validate prices and stock from Sanity (server-side, no CDN)
     let serverTotal = 0;
+    const shippingItems: { categoria: string; quantity: number }[] = [];
 
     if (serverClient && sanityConfigured) {
       for (const item of items) {
@@ -85,6 +86,10 @@ export async function POST(request: NextRequest) {
 
         // Use Sanity price (source of truth), not the client-sent price
         serverTotal += sanityProduct.precio * item.quantity;
+        shippingItems.push({
+          categoria: sanityProduct.categoria ?? item.categoria ?? "etnicas",
+          quantity: item.quantity,
+        });
       }
     } else {
       // Fallback: recalculate from client-sent prices
@@ -92,9 +97,21 @@ export async function POST(request: NextRequest) {
         (sum, item) => sum + item.precio * item.quantity,
         0
       );
+      for (const item of items) {
+        shippingItems.push({
+          categoria: item.categoria ?? "etnicas",
+          quantity: item.quantity,
+        });
+      }
     }
 
-    const serverGrandTotal = serverTotal + shippingOption.coste;
+    // Recalcular el envío en el servidor (peso por unidades + gratis ≥ umbral)
+    const serverShipping = shippingCost(
+      shippingMethod,
+      shippingItems,
+      serverTotal
+    );
+    const serverGrandTotal = serverTotal + serverShipping;
 
     if (Math.abs(serverGrandTotal - total) > 0.01) {
       return NextResponse.json(
@@ -150,7 +167,7 @@ export async function POST(request: NextRequest) {
     console.log(
       "Envío:",
       shippingOption.label,
-      `(${shippingOption.coste.toFixed(2)} €)`
+      `(${serverShipping.toFixed(2)} €)`
     );
     console.log("Total:", serverGrandTotal.toFixed(2), "€");
     console.log("Cliente:", shipping.nombre, shipping.apellidos);

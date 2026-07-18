@@ -5,7 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCartStore, useCartTotal, useCartCount } from "@/store/cartStore";
 import type { ShippingInfo, ShippingMethod } from "@/types/order";
-import { SHIPPING_OPTIONS } from "@/types/order";
+import {
+  SHIPPING_OPTIONS,
+  shippingCost,
+  FREE_SHIPPING_THRESHOLD,
+} from "@/types/order";
 
 export default function CheckoutForm() {
   const { items, clearCart } = useCartStore();
@@ -16,8 +20,8 @@ export default function CheckoutForm() {
   const [shippingMethod, setShippingMethod] =
     useState<ShippingMethod>("ordinario");
 
-  const shippingCost = SHIPPING_OPTIONS[shippingMethod].coste;
-  const grandTotal = total + shippingCost;
+  const currentShippingCost = shippingCost(shippingMethod, items, total);
+  const grandTotal = total + currentShippingCost;
 
   const [shipping, setShipping] = useState<ShippingInfo>({
     nombre: "",
@@ -48,6 +52,7 @@ export default function CheckoutForm() {
         precio: item.precio,
         quantity: item.quantity,
         imagenUrl: item.imagenUrl,
+        categoria: item.categoria,
       }));
 
       const response = await fetch("/api/checkout", {
@@ -308,6 +313,7 @@ export default function CheckoutForm() {
                 ).map((key) => {
                   const opt = SHIPPING_OPTIONS[key];
                   const selected = shippingMethod === key;
+                  const optCost = shippingCost(key, items, total);
                   return (
                     <label
                       key={key}
@@ -335,8 +341,8 @@ export default function CheckoutForm() {
                           </span>
                         </span>
                       </span>
-                      <span className="text-sm font-medium text-texto">
-                        {opt.coste.toFixed(2)}€
+                      <span className="text-sm font-medium text-texto whitespace-nowrap">
+                        {optCost === 0 ? "Gratis" : `${optCost.toFixed(2)}€`}
                       </span>
                     </label>
                   );
@@ -351,8 +357,19 @@ export default function CheckoutForm() {
               </div>
               <div className="flex justify-between text-sm">
                 <span className="text-mid">Envío</span>
-                <span className="text-mid">{shippingCost.toFixed(2)}€</span>
+                <span className="text-mid">
+                  {currentShippingCost === 0
+                    ? "Gratis"
+                    : `${currentShippingCost.toFixed(2)}€`}
+                </span>
               </div>
+              {shippingMethod === "ordinario" &&
+                total < FREE_SHIPPING_THRESHOLD && (
+                  <p className="text-xs text-terracotta">
+                    Te faltan {(FREE_SHIPPING_THRESHOLD - total).toFixed(2)}€
+                    para el envío ordinario gratuito.
+                  </p>
+                )}
               <div className="flex justify-between text-lg font-heading pt-2 border-t border-border">
                 <span className="text-texto">Total</span>
                 <span className="text-terracotta font-semibold">

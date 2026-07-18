@@ -107,6 +107,7 @@ export const productPriceQuery = groq`
     oldId,
     precio,
     stock,
-    visible
+    visible,
+    categoria
   }
 `;
