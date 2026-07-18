@@ -11,7 +11,10 @@ const leftLinks = [
   { label: "Otros", href: "/productos?categoria=otros" },
 ];
 
-const rightLinks = [{ label: "Nosotros", href: "/nosotros" }];
+const rightLinks = [
+  { label: "Nosotros", href: "/nosotros" },
+  { label: "Contacto", href: "/contacto" },
+];
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -66,12 +69,6 @@ export default function Navbar() {
                     {link.label}
                   </Link>
                 ))}
-                <span
-                  className="text-mid/60 text-sm font-medium tracking-wide cursor-default"
-                  title="Próximamente"
-                >
-                  Blog
-                </span>
               </div>
               {/* Cart button */}
               <button
@@ -166,9 +163,6 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <span className="block text-mid/60 text-base font-medium">
-                Blog <span className="text-xs">(próximamente)</span>
-              </span>
             </div>
           </div>
         )}

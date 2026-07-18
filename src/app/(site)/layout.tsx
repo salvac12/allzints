@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CartDrawer from "@/components/CartDrawer";
 import CartHydration from "@/components/CartHydration";
+import CookieBanner from "@/components/CookieBanner";
 
 export default function SiteLayout({
   children,
@@ -15,6 +16,7 @@ export default function SiteLayout({
       <main className="min-h-screen">{children}</main>
       <Footer />
       <CartDrawer />
+      <CookieBanner />
     </>
   );
 }

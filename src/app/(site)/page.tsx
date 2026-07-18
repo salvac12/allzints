@@ -4,9 +4,13 @@ import PhotoCarousel from "@/components/PhotoCarousel";
 
 const heroImages = [
   { src: "/images/productos/Hero-Modelo-Budapest.jpg", alt: "Modelo con cinta de móvil Budapest" },
+  { src: "/images/productos/Cinta-Etnica-Fucsia.webp", alt: "Cinta de móvil étnica fucsia" },
   { src: "/images/productos/Hero-Lisboa.jpg", alt: "Bolso y cinta de móvil Lisboa" },
+  { src: "/images/productos/Cinta-Santorini.webp", alt: "Cinta de móvil Santorini" },
   { src: "/images/productos/Hero-Modelo-NY.jpg", alt: "Modelo con bolso Nueva York" },
+  { src: "/images/productos/Cinta-Etnica-Mostaza.webp", alt: "Cinta de móvil étnica mostaza" },
   { src: "/images/productos/Hero-Modelo-Santorini.jpg", alt: "Modelo con bolso Santorini" },
+  { src: "/images/productos/Cinta-Ibiza-Rosa.webp", alt: "Cinta de móvil Ibiza rosa" },
   { src: "/images/productos/Hero-Modelo-Mallorca.jpg", alt: "Modelo con bolso Mallorca" },
 ];
 
@@ -38,6 +42,14 @@ const testimonials = [
     name: "David Herrera",
     text: "¡La cinta cuelga móvil es genial para una persona como yo! La uso en el gimnasio y para ir en bici. Diseño práctico y resistente, la mejor compra que he hecho últimamente.",
   },
+  {
+    name: "Carmen Ortega",
+    text: "El bolso es precioso, la tela de tapicería tiene una caída y una calidad que no esperaba por este precio. Por dentro se limpia genial y el botón de bronce le da un toque muy elegante.",
+  },
+  {
+    name: "Isabel Navarro",
+    text: "Compré un bolso tipo cartera para regalar y acabé pidiendo otro para mí. El tamaño es perfecto para el día a día y con una cadena queda ideal. Llegó muy bien presentado.",
+  },
 ];
 
 export default function Home() {
@@ -65,8 +77,8 @@ export default function Home() {
             </p>
             <p className="mt-6 text-white/70 max-w-lg leading-relaxed">
               Cada pieza de All Zints está confeccionada a mano con materiales
-              seleccionados. Bolsos, cintas para móvil y accesorios que cuentan
-              una historia.
+              seleccionados. Bolsos, cintas para móvil y accesorios diferentes
+              y elegantes.
             </p>
           </div>
         </div>

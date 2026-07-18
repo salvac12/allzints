@@ -5,9 +5,10 @@
     "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Atenas.webp",
-    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad. Su diseño minimalista y sofisticado lo hace perfecto para cualquier ocasión.",
+    "descripcion": "Bolso tipo cartera confeccionado en tela de gobelino, con entretela para darle más cuerpo y un interior forrado de tela de toldo, fácil de limpiar. Incluye dos presillas para colgar una cadena y botón de metal bronce para un toque elegante.",
     "materiales": [
-      "Lino de alta calidad"
+      "Tela de gobelino",
+      "Forro de tela de toldo"
     ],
     "dimensiones": "20x30 cm"
   },
@@ -17,9 +18,10 @@
     "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Ibiza-Azul.webp",
-    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "descripcion": "Bolso tipo cartera confeccionado en tela de gobelino, con entretela para darle más cuerpo y un interior forrado de tela de toldo, fácil de limpiar. Incluye dos presillas para colgar una cadena y botón de metal bronce para un toque elegante.",
     "materiales": [
-      "Lino de alta calidad"
+      "Tela de gobelino",
+      "Forro de tela de toldo"
     ],
     "dimensiones": "20x30 cm"
   },
@@ -29,9 +31,10 @@
     "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Ibiza-Rosa.webp",
-    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "descripcion": "Bolso tipo cartera confeccionado en tela de gobelino, con entretela para darle más cuerpo y un interior forrado de tela de toldo, fácil de limpiar. Incluye dos presillas para colgar una cadena y botón de metal bronce para un toque elegante.",
     "materiales": [
-      "Lino de alta calidad"
+      "Tela de gobelino",
+      "Forro de tela de toldo"
     ],
     "dimensiones": "20x30 cm"
   },
@@ -41,9 +44,10 @@
     "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Londres.webp",
-    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "descripcion": "Bolso tipo cartera confeccionado en tela de gobelino, con entretela para darle más cuerpo y un interior forrado de tela de toldo, fácil de limpiar. Incluye dos presillas para colgar una cadena y botón de metal bronce para un toque elegante.",
     "materiales": [
-      "Lino de alta calidad"
+      "Tela de gobelino",
+      "Forro de tela de toldo"
     ],
     "dimensiones": "20x30 cm"
   },
@@ -53,9 +57,10 @@
     "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Marrackech.webp",
-    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Diseño minimalista y sofisticado.",
+    "descripcion": "Bolso tipo cartera confeccionado en tela de gobelino, con entretela para darle más cuerpo y un interior forrado de tela de toldo, fácil de limpiar. Incluye dos presillas para colgar una cadena y botón de metal bronce para un toque elegante.",
     "materiales": [
-      "Lino de alta calidad"
+      "Tela de gobelino",
+      "Forro de tela de toldo"
     ],
     "dimensiones": "20x30 cm"
   },
@@ -65,9 +70,10 @@
     "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Menorca.webp",
-    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "descripcion": "Bolso tipo cartera confeccionado en tela de gobelino, con entretela para darle más cuerpo y un interior forrado de tela de toldo, fácil de limpiar. Incluye dos presillas para colgar una cadena y botón de metal bronce para un toque elegante.",
     "materiales": [
-      "Lino de alta calidad"
+      "Tela de gobelino",
+      "Forro de tela de toldo"
     ],
     "dimensiones": "20x30 cm"
   },
@@ -77,9 +83,10 @@
     "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Nueva-York.webp",
-    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "descripcion": "Bolso tipo cartera confeccionado en tela de gobelino, con entretela para darle más cuerpo y un interior forrado de tela de toldo, fácil de limpiar. Incluye dos presillas para colgar una cadena y botón de metal bronce para un toque elegante.",
     "materiales": [
-      "Lino de alta calidad"
+      "Tela de gobelino",
+      "Forro de tela de toldo"
     ],
     "dimensiones": "20x30 cm"
   },
@@ -89,9 +96,10 @@
     "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Paris-1.webp",
-    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Diseño minimalista y sofisticado.",
+    "descripcion": "Bolso tipo cartera confeccionado en tela de gobelino, con entretela para darle más cuerpo y un interior forrado de tela de toldo, fácil de limpiar. Incluye dos presillas para colgar una cadena y botón de metal bronce para un toque elegante.",
     "materiales": [
-      "Lino de alta calidad"
+      "Tela de gobelino",
+      "Forro de tela de toldo"
     ],
     "dimensiones": "20x30 cm"
   },
@@ -101,9 +109,10 @@
     "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Roma.webp",
-    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "descripcion": "Bolso tipo cartera confeccionado en tela de gobelino, con entretela para darle más cuerpo y un interior forrado de tela de toldo, fácil de limpiar. Incluye dos presillas para colgar una cadena y botón de metal bronce para un toque elegante.",
     "materiales": [
-      "Lino de alta calidad"
+      "Tela de gobelino",
+      "Forro de tela de toldo"
     ],
     "dimensiones": "20x30 cm"
   },
@@ -113,9 +122,10 @@
     "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Viena.webp",
-    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Diseño minimalista y sofisticado.",
+    "descripcion": "Bolso tipo cartera confeccionado en tela de gobelino, con entretela para darle más cuerpo y un interior forrado de tela de toldo, fácil de limpiar. Incluye dos presillas para colgar una cadena y botón de metal bronce para un toque elegante.",
     "materiales": [
-      "Lino de alta calidad"
+      "Tela de gobelino",
+      "Forro de tela de toldo"
     ],
     "dimensiones": "20x30 cm"
   },
@@ -125,9 +135,10 @@
     "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Amberes.webp",
-    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "descripcion": "Bolso tipo cartera confeccionado en tela de gobelino, con entretela para darle más cuerpo y un interior forrado de tela de toldo, fácil de limpiar. Incluye dos presillas para colgar una cadena y botón de metal bronce para un toque elegante.",
     "materiales": [
-      "Lino de alta calidad"
+      "Tela de gobelino",
+      "Forro de tela de toldo"
     ],
     "dimensiones": "20x30 cm"
   },
@@ -137,9 +148,10 @@
     "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Barcelona.webp",
-    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "descripcion": "Bolso tipo cartera confeccionado en tela de gobelino, con entretela para darle más cuerpo y un interior forrado de tela de toldo, fácil de limpiar. Incluye dos presillas para colgar una cadena y botón de metal bronce para un toque elegante.",
     "materiales": [
-      "Lino de alta calidad"
+      "Tela de gobelino",
+      "Forro de tela de toldo"
     ],
     "dimensiones": "20x30 cm"
   },
@@ -149,9 +161,10 @@
     "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Budapest-Blanco.webp",
-    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "descripcion": "Bolso tipo cartera confeccionado en tela de gobelino, con entretela para darle más cuerpo y un interior forrado de tela de toldo, fácil de limpiar. Incluye dos presillas para colgar una cadena y botón de metal bronce para un toque elegante.",
     "materiales": [
-      "Lino de alta calidad"
+      "Tela de gobelino",
+      "Forro de tela de toldo"
     ],
     "dimensiones": "20x30 cm"
   },
@@ -161,9 +174,10 @@
     "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Dublin-H.webp",
-    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "descripcion": "Bolso tipo cartera confeccionado en tela de gobelino, con entretela para darle más cuerpo y un interior forrado de tela de toldo, fácil de limpiar. Incluye dos presillas para colgar una cadena y botón de metal bronce para un toque elegante.",
     "materiales": [
-      "Lino de alta calidad"
+      "Tela de gobelino",
+      "Forro de tela de toldo"
     ],
     "dimensiones": "20x30 cm"
   },
@@ -173,9 +187,10 @@
     "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Escoces-Verde.webp",
-    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "descripcion": "Bolso tipo cartera confeccionado en tela de gobelino, con entretela para darle más cuerpo y un interior forrado de tela de toldo, fácil de limpiar. Incluye dos presillas para colgar una cadena y botón de metal bronce para un toque elegante.",
     "materiales": [
-      "Lino de alta calidad"
+      "Tela de gobelino",
+      "Forro de tela de toldo"
     ],
     "dimensiones": "20x30 cm"
   },
@@ -185,9 +200,10 @@
     "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Lisboa.webp",
-    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "descripcion": "Bolso tipo cartera confeccionado en tela de gobelino, con entretela para darle más cuerpo y un interior forrado de tela de toldo, fácil de limpiar. Incluye dos presillas para colgar una cadena y botón de metal bronce para un toque elegante.",
     "materiales": [
-      "Lino de alta calidad"
+      "Tela de gobelino",
+      "Forro de tela de toldo"
     ],
     "dimensiones": "20x30 cm"
   },
@@ -197,9 +213,10 @@
     "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Madrid.webp",
-    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "descripcion": "Bolso tipo cartera confeccionado en tela de gobelino, con entretela para darle más cuerpo y un interior forrado de tela de toldo, fácil de limpiar. Incluye dos presillas para colgar una cadena y botón de metal bronce para un toque elegante.",
     "materiales": [
-      "Lino de alta calidad"
+      "Tela de gobelino",
+      "Forro de tela de toldo"
     ],
     "dimensiones": "20x30 cm"
   },
@@ -209,9 +226,10 @@
     "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Mallorca.webp",
-    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "descripcion": "Bolso tipo cartera confeccionado en tela de gobelino, con entretela para darle más cuerpo y un interior forrado de tela de toldo, fácil de limpiar. Incluye dos presillas para colgar una cadena y botón de metal bronce para un toque elegante.",
     "materiales": [
-      "Lino de alta calidad"
+      "Tela de gobelino",
+      "Forro de tela de toldo"
     ],
     "dimensiones": "20x30 cm"
   },
@@ -221,9 +239,10 @@
     "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Santorini.webp",
-    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Su interior está forrado para mayor durabilidad y practicidad.",
+    "descripcion": "Bolso tipo cartera confeccionado en tela de gobelino, con entretela para darle más cuerpo y un interior forrado de tela de toldo, fácil de limpiar. Incluye dos presillas para colgar una cadena y botón de metal bronce para un toque elegante.",
     "materiales": [
-      "Lino de alta calidad"
+      "Tela de gobelino",
+      "Forro de tela de toldo"
     ],
     "dimensiones": "20x30 cm"
   },
@@ -233,9 +252,10 @@
     "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Varsovia.webp",
-    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Diseño exclusivo de edición limitada.",
+    "descripcion": "Bolso tipo cartera confeccionado en tela de gobelino, con entretela para darle más cuerpo y un interior forrado de tela de toldo, fácil de limpiar. Incluye dos presillas para colgar una cadena y botón de metal bronce para un toque elegante.",
     "materiales": [
-      "Lino de alta calidad"
+      "Tela de gobelino",
+      "Forro de tela de toldo"
     ],
     "dimensiones": "20x30 cm"
   },
@@ -245,9 +265,10 @@
     "precio": 25,
     "categoria": "bolsos",
     "imagen": "Bolso-Varsovia-2.webp",
-    "descripcion": "Elegante bolso fabricado en lino de alta calidad. Diseño exclusivo de edición limitada.",
+    "descripcion": "Bolso tipo cartera confeccionado en tela de gobelino, con entretela para darle más cuerpo y un interior forrado de tela de toldo, fácil de limpiar. Incluye dos presillas para colgar una cadena y botón de metal bronce para un toque elegante.",
     "materiales": [
-      "Lino de alta calidad"
+      "Tela de gobelino",
+      "Forro de tela de toldo"
     ],
     "dimensiones": "20x30 cm"
   },

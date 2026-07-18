@@ -3,14 +3,21 @@ import Image from "next/image";
 
 const footerLinks = [
   { label: "Nosotros", href: "/nosotros" },
-  { label: "Contacto", href: "/nosotros#contacto" },
+  { label: "Contacto", href: "/contacto" },
+];
+
+const legalLinks = [
+  { label: "Aviso Legal", href: "/aviso-legal" },
+  { label: "Política de Privacidad", href: "/politica-de-privacidad" },
+  { label: "Política de Cookies", href: "/politica-de-cookies" },
+  { label: "Términos y Condiciones", href: "/terminos-y-condiciones" },
 ];
 
 export default function Footer() {
   return (
     <footer className="bg-dark text-white/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="space-y-4">
             <Image
@@ -31,6 +38,23 @@ export default function Footer() {
             <h3 className="font-heading text-white text-lg mb-4">Navegación</h3>
             <ul className="space-y-3">
               {footerLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-white/60 hover:text-terracotta-light transition-colors text-sm"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Legal */}
+          <div>
+            <h3 className="font-heading text-white text-lg mb-4">Legal</h3>
+            <ul className="space-y-3">
+              {legalLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -67,7 +91,7 @@ export default function Footer() {
               </a>
               {/* WhatsApp */}
               <a
-                href="https://wa.me/34600000000"
+                href="https://wa.me/34649738682"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/60 hover:text-terracotta-light transition-colors"

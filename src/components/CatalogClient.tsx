@@ -5,16 +5,6 @@ import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import type { Product } from "@/types/product";
 import ProductGrid from "./ProductGrid";
-import PhotoCarousel from "./PhotoCarousel";
-
-const bolsosCarousel = [
-  { src: "/images/productos/Bolso-Atenas.webp", alt: "Bolso Atenas" },
-  { src: "/images/productos/Bolso-Mallorca.webp", alt: "Bolso Mallorca" },
-  { src: "/images/productos/Bolso-Santorini.webp", alt: "Bolso Santorini" },
-  { src: "/images/productos/Bolso-Marrackech.webp", alt: "Bolso Marrakech" },
-  { src: "/images/productos/Bolso-Ibiza-Rosa.webp", alt: "Bolso Ibiza rosa" },
-  { src: "/images/productos/Bolso-Lisboa.webp", alt: "Bolso Lisboa" },
-];
 
 interface CatalogClientProps {
   products: Product[];
@@ -24,8 +14,6 @@ const filters = [
   { label: "Todos", value: "todos" },
   { label: "Zintas", value: "zintas" },
   { label: "Bolsos", value: "bolsos" },
-  { label: "Étnicas", value: "etnicas" },
-  { label: "Tapicería", value: "tapiceria" },
   { label: "Otros", value: "otros" },
 ];
 
@@ -41,12 +29,8 @@ export default function CatalogClient({ products }: CatalogClientProps) {
 
   const filtered = useMemo(() => {
     if (activeFilter === "todos") return products;
-    if (activeFilter === "zintas") {
-      return products.filter(
-        (p) => p.categoria === "etnicas" || p.categoria === "tapiceria"
-      );
-    }
-    if (activeFilter === "otros") return [];
+    // "Zintas" muestra solo las dos subcategorías, sin grid mezclado
+    if (activeFilter === "zintas" || activeFilter === "otros") return [];
     return products.filter((p) => p.categoria === activeFilter);
   }, [activeFilter, products]);
 
@@ -54,6 +38,12 @@ export default function CatalogClient({ products }: CatalogClientProps) {
     activeFilter === "zintas" ||
     activeFilter === "etnicas" ||
     activeFilter === "tapiceria";
+
+  // El pill "Zintas" queda activo también dentro de sus subcategorías
+  const isPillActive = (value: string) =>
+    value === "zintas"
+      ? showZintasIntro
+      : activeFilter === value;
 
   return (
     <>
@@ -64,15 +54,19 @@ export default function CatalogClient({ products }: CatalogClientProps) {
             key={f.value}
             onClick={() => setActiveFilter(f.value)}
             className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
-              activeFilter === f.value
+              isPillActive(f.value)
                 ? "bg-terracotta text-white shadow-sm"
                 : "bg-white text-texto border border-border hover:border-terracotta hover:text-terracotta"
             }`}
           >
             {f.label}
-            {activeFilter === f.value && f.value !== "otros" && (
-              <span className="ml-1.5 text-white/80">({filtered.length})</span>
-            )}
+            {activeFilter === f.value &&
+              f.value !== "otros" &&
+              f.value !== "zintas" && (
+                <span className="ml-1.5 text-white/80">
+                  ({filtered.length})
+                </span>
+              )}
           </button>
         ))}
       </div>
@@ -84,12 +78,20 @@ export default function CatalogClient({ products }: CatalogClientProps) {
             Lleva contigo un toque artesanal con nuestras Zintas de móvil,
             confeccionadas a mano con telas de alta calidad. Ideales para
             personalizar tus accesorios, estas Zintas aportan un estilo único y
-            bohemio a cualquier look. Descubre nuestros modelos en tejidos étnico
-            y jacquard. ¡Encuentra la que mejor se adapte a tu estilo!
+            bohemio a cualquier look. Descubre nuestros modelos en tejidos
+            étnicos y de tapicería. ¡Encuentra la que mejor se adapte a tu
+            estilo!
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
-            <div className="relative aspect-[4/3] rounded-card overflow-hidden shadow-sm">
+            <button
+              onClick={() => setActiveFilter("etnicas")}
+              className={`relative aspect-[4/3] rounded-card overflow-hidden shadow-sm transition-all ${
+                activeFilter === "etnicas"
+                  ? "ring-2 ring-terracotta"
+                  : "hover:ring-2 hover:ring-terracotta/50"
+              }`}
+            >
               <Image
                 src="/images/productos/Cinta-Etnica-Fucsia.webp"
                 alt="Cintas étnicas"
@@ -98,33 +100,42 @@ export default function CatalogClient({ products }: CatalogClientProps) {
                 sizes="(max-width: 640px) 100vw, 50vw"
               />
               <span className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-cream/90 text-texto text-sm px-4 py-1 rounded-full font-medium">
-                Cintas étnicas
+                Étnicas
               </span>
-            </div>
-            <div className="relative aspect-[4/3] rounded-card overflow-hidden shadow-sm">
+            </button>
+            <button
+              onClick={() => setActiveFilter("tapiceria")}
+              className={`relative aspect-[4/3] rounded-card overflow-hidden shadow-sm transition-all ${
+                activeFilter === "tapiceria"
+                  ? "ring-2 ring-terracotta"
+                  : "hover:ring-2 hover:ring-terracotta/50"
+              }`}
+            >
               <Image
                 src="/images/productos/Cinta-Kenia-Blanco.webp"
-                alt="Cintas claras de tapicería"
+                alt="Cintas de tapicería"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 640px) 100vw, 50vw"
               />
               <span className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-cream/90 text-texto text-sm px-4 py-1 rounded-full font-medium">
-                Cintas claras
+                Tapicería
               </span>
-            </div>
+            </button>
           </div>
         </div>
       )}
 
-      {/* Bolsos: carrusel de fotos */}
+      {/* Bolsos: texto descriptivo */}
       {activeFilter === "bolsos" && (
-        <div className="max-w-4xl mx-auto mb-12">
-          <PhotoCarousel
-            images={bolsosCarousel}
-            className="aspect-[16/9] rounded-card shadow-sm"
-            sizes="(max-width: 768px) 100vw, 768px"
-          />
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <p className="text-mid leading-relaxed">
+            Estos bolsos tipo cartera están confeccionados en tela de gobelino,
+            con entretela para darles más cuerpo y un interior forrado de tela
+            de toldo, fácil de limpiar. Incluyen dos presillas para colgar una
+            cadena y botón de metal bronce para un toque elegante. Medidas:
+            20x30 cm.
+          </p>
         </div>
       )}
 
@@ -153,7 +164,7 @@ export default function CatalogClient({ products }: CatalogClientProps) {
             añadiendo novedades y productos interesantes.
           </p>
         </div>
-      ) : (
+      ) : activeFilter === "zintas" ? null : (
         <>
           <ProductGrid products={filtered} />
           {filtered.length === 0 && (
