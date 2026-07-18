@@ -18,7 +18,13 @@ export interface Product {
   nombre: string;
   slug: string;
   precio: number;
-  categoria: "bolsos" | "etnicas" | "tapiceria";
+  categoria:
+    | "bolsos"
+    | "etnicas"
+    | "tapiceria"
+    | "mini-etnicas"
+    | "mini-gobelino"
+    | "llaveros";
   imagen: SanityImage;
   imagenUrl?: string;
   galeriaUrls?: string[];
@@ -35,7 +41,13 @@ export interface LegacyProduct {
   id: string;
   nombre: string;
   precio: number;
-  categoria: "bolsos" | "etnicas" | "tapiceria";
+  categoria:
+    | "bolsos"
+    | "etnicas"
+    | "tapiceria"
+    | "mini-etnicas"
+    | "mini-gobelino"
+    | "llaveros";
   imagen: string;
   descripcion: string;
   materiales: string[];

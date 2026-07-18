@@ -20,10 +20,12 @@ export default function CatalogClient({ products }: CatalogClientProps) {
     setActiveFilter(urlCategory);
   }, [urlCategory]);
 
+  // Landings que solo muestran tiles de subcategoría (sin grid mezclado)
+  const landingOnly = ["zintas", "mini", "otros"];
+
   const filtered = useMemo(() => {
     if (activeFilter === "todos") return products;
-    // "Zintas" muestra solo las dos subcategorías, sin grid mezclado
-    if (activeFilter === "zintas") return [];
+    if (landingOnly.includes(activeFilter)) return [];
     return products.filter((p) => p.categoria === activeFilter);
   }, [activeFilter, products]);
 
@@ -31,6 +33,36 @@ export default function CatalogClient({ products }: CatalogClientProps) {
     activeFilter === "zintas" ||
     activeFilter === "etnicas" ||
     activeFilter === "tapiceria";
+
+  const showMiniIntro =
+    activeFilter === "mini" ||
+    activeFilter === "mini-etnicas" ||
+    activeFilter === "mini-gobelino";
+
+  // Categorías aún sin catálogo cargado (fotos/productos pendientes) → mensaje suave
+  const enPreparacion: string[] = [];
+
+  // "Mini Cintas": dos subcategorías (como Zintas). Rellenar `img` con la foto
+  // cuando esté (p. ej. "/images/productos/Mini-Cinta-Etnica.webp").
+  const miniTiles: { label: string; filter: string; img: string | null }[] = [
+    {
+      label: "Mini Cinta Étnicas",
+      filter: "mini-etnicas",
+      img: "/images/productos/mini-cinta-rombos-mostaza.webp",
+    },
+    {
+      label: "Mini Cinta Gobelino",
+      filter: "mini-gobelino",
+      img: "/images/productos/mini-cinta-atenas.webp",
+    },
+  ];
+
+  // "Otros": categorías en preparación (próximamente). Rellenar `img` al añadir foto.
+  const otrosTiles: { label: string; img: string | null }[] = [
+    { label: "Cinturones", img: null },
+    { label: "Correas de Perro", img: null },
+    { label: "Abanicos", img: null },
+  ];
 
   return (
     <>
@@ -89,6 +121,88 @@ export default function CatalogClient({ products }: CatalogClientProps) {
         </div>
       )}
 
+      {/* Intro Mini Cintas: dos subcategorías (Étnicas / Gobelino) */}
+      {showMiniIntro && (
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <p className="text-mid leading-relaxed">
+            Nuestras Mini Cintas: la versión más compacta de nuestras Zintas,
+            hechas a mano con las mismas telas. El complemento perfecto para dar
+            un toque artesanal a tus accesorios. Elige entre tejido étnico o
+            gobelino.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
+            {miniTiles.map((tile) => (
+              <button
+                key={tile.filter}
+                onClick={() => setActiveFilter(tile.filter)}
+                className={`relative aspect-[4/3] rounded-card overflow-hidden shadow-sm transition-all ${
+                  activeFilter === tile.filter
+                    ? "ring-2 ring-terracotta"
+                    : "hover:ring-2 hover:ring-terracotta/50"
+                }`}
+              >
+                {tile.img ? (
+                  <Image
+                    src={tile.img}
+                    alt={tile.label}
+                    fill
+                    className="object-cover object-center"
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                  />
+                ) : (
+                  <div className="absolute inset-0 bg-gradient-to-br from-cream to-terracotta/20" />
+                )}
+                <span className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-cream/90 text-texto text-sm px-4 py-1 rounded-full font-medium">
+                  {tile.label}
+                </span>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Otros: subcategorías en preparación (próximamente) */}
+      {activeFilter === "otros" && (
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <p className="text-mid leading-relaxed">
+            Estamos preparando nuevas colecciones hechas a mano con el mismo
+            mimo que nuestras Zintas. Cinturones, abanicos, llaveros y mini
+            Zintas llegarán muy pronto. ¡Vuelve para descubrirlas!
+          </p>
+
+          <div className="grid grid-cols-2 gap-6 mt-10">
+            {otrosTiles.map((tile) => (
+              <div
+                key={tile.label}
+                className="relative aspect-[4/3] rounded-card overflow-hidden shadow-sm cursor-default"
+                aria-label={`${tile.label} (próximamente)`}
+              >
+                {tile.img ? (
+                  <Image
+                    src={tile.img}
+                    alt={tile.label}
+                    fill
+                    className="object-cover object-center"
+                    sizes="(max-width: 640px) 50vw, 33vw"
+                  />
+                ) : (
+                  <div className="absolute inset-0 bg-gradient-to-br from-cream to-terracotta/20" />
+                )}
+                {/* Velo + etiqueta "Próximamente" */}
+                <div className="absolute inset-0 bg-texto/20" />
+                <span className="absolute top-3 left-1/2 -translate-x-1/2 bg-terracotta text-white text-xs px-3 py-1 rounded-full font-medium uppercase tracking-wide">
+                  Próximamente
+                </span>
+                <span className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-cream/90 text-texto text-sm px-4 py-1 rounded-full font-medium">
+                  {tile.label}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Bolsos: texto descriptivo */}
       {activeFilter === "bolsos" && (
         <div className="max-w-3xl mx-auto text-center mb-12">
@@ -102,13 +216,15 @@ export default function CatalogClient({ products }: CatalogClientProps) {
         </div>
       )}
 
-      {/* Grid de productos (Zintas solo muestra los dos tiles de arriba) */}
-      {activeFilter !== "zintas" && (
+      {/* Grid de productos (las landings zintas/mini/otros solo muestran tiles) */}
+      {!landingOnly.includes(activeFilter) && (
         <>
           <ProductGrid products={filtered} />
           {filtered.length === 0 && (
             <p className="text-center text-mid py-12">
-              No se encontraron productos en esta categoría.
+              {enPreparacion.includes(activeFilter)
+                ? "Muy pronto disponibles. ¡Estamos preparando esta colección!"
+                : "No se encontraron productos en esta categoría."}
             </p>
           )}
         </>

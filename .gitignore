@@ -34,3 +34,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Fotos fuente (no se despliegan; ya normalizadas en public/images/productos)
+Web-assets/
+.DS_Store

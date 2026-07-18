@@ -865,5 +865,830 @@
     "materiales": [
       "Tapicería exclusiva"
     ]
+  },
+  {
+    "id": "mini-cinta-elastica",
+    "nombre": "Mini Cinta Elástica",
+    "precio": 12,
+    "categoria": "mini-etnicas",
+    "imagen": "mini-cinta-elastica.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliamida",
+      "Acrílico"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-etnica-fluor-naranja",
+    "nombre": "Mini Cinta Étnica Flúor Naranja",
+    "precio": 12,
+    "categoria": "mini-etnicas",
+    "imagen": "mini-cinta-etnica-fluor-naranja.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliamida",
+      "Acrílico"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-etnica-marino",
+    "nombre": "Mini Cinta Étnica Marino",
+    "precio": 12,
+    "categoria": "mini-etnicas",
+    "imagen": "mini-cinta-etnica-marino.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliamida",
+      "Acrílico"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-fina-espiga-negra",
+    "nombre": "Mini Cinta Fina Espiga Negra",
+    "precio": 12,
+    "categoria": "mini-etnicas",
+    "imagen": "mini-cinta-fina-espiga-negra.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliamida",
+      "Acrílico"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-fina-espiga-beige",
+    "nombre": "Mini Cinta Fina Espiga Beige",
+    "precio": 12,
+    "categoria": "mini-etnicas",
+    "imagen": "mini-cinta-fina-espiga-beige.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliamida",
+      "Acrílico"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-fluor-amarilla",
+    "nombre": "Mini Cinta Flúor Amarilla",
+    "precio": 12,
+    "categoria": "mini-etnicas",
+    "imagen": "mini-cinta-fluor-amarilla.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliamida",
+      "Acrílico"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-fluor-coral",
+    "nombre": "Mini Cinta Flúor Coral",
+    "precio": 12,
+    "categoria": "mini-etnicas",
+    "imagen": "mini-cinta-fluor-coral.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliamida",
+      "Acrílico"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-fluor-naranja",
+    "nombre": "Mini Cinta Flúor Naranja",
+    "precio": 12,
+    "categoria": "mini-etnicas",
+    "imagen": "mini-cinta-fluor-naranja.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliamida",
+      "Acrílico"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-fluor-verde",
+    "nombre": "Mini Cinta Flúor Verde",
+    "precio": 12,
+    "categoria": "mini-etnicas",
+    "imagen": "mini-cinta-fluor-verde.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliamida",
+      "Acrílico"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-rombos-beige",
+    "nombre": "Mini Cinta Rombos Beige",
+    "precio": 12,
+    "categoria": "mini-etnicas",
+    "imagen": "mini-cinta-rombos-beige.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliamida",
+      "Acrílico"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-rombos-fucsia",
+    "nombre": "Mini Cinta Rombos Fucsia",
+    "precio": 12,
+    "categoria": "mini-etnicas",
+    "imagen": "mini-cinta-rombos-fucsia.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliamida",
+      "Acrílico"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-rombos-marino",
+    "nombre": "Mini Cinta Rombos Marino",
+    "precio": 12,
+    "categoria": "mini-etnicas",
+    "imagen": "mini-cinta-rombos-marino.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliamida",
+      "Acrílico"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-rombos-mostaza",
+    "nombre": "Mini Cinta Rombos Mostaza",
+    "precio": 12,
+    "categoria": "mini-etnicas",
+    "imagen": "mini-cinta-rombos-mostaza.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliamida",
+      "Acrílico"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-zig-zag-beige",
+    "nombre": "Mini Cinta Zig Zag Beige",
+    "precio": 12,
+    "categoria": "mini-etnicas",
+    "imagen": "mini-cinta-zig-zag-beige.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliamida",
+      "Acrílico"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-zig-zag-caza",
+    "nombre": "Mini Cinta Zig Zag Caza",
+    "precio": 12,
+    "categoria": "mini-etnicas",
+    "imagen": "mini-cinta-zig-zag-caza.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliamida",
+      "Acrílico"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-zig-zag-negra",
+    "nombre": "Mini Cinta Zig Zag Negra",
+    "precio": 12,
+    "categoria": "mini-etnicas",
+    "imagen": "mini-cinta-zig-zag-negra.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliamida",
+      "Acrílico"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-zig-zag-teja",
+    "nombre": "Mini Cinta Zig Zag Teja",
+    "precio": 12,
+    "categoria": "mini-etnicas",
+    "imagen": "mini-cinta-zig-zag-teja.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliamida",
+      "Acrílico"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-zig-zag-turquesa",
+    "nombre": "Mini Cinta Zig Zag Turquesa",
+    "precio": 12,
+    "categoria": "mini-etnicas",
+    "imagen": "mini-cinta-zig-zag-turquesa.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliamida",
+      "Acrílico"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-rombos-teja",
+    "nombre": "Mini Cinta Rombos Teja",
+    "precio": 12,
+    "categoria": "mini-etnicas",
+    "imagen": "mini-cinta-rombos-teja.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliamida",
+      "Acrílico"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-rombos-turquesa",
+    "nombre": "Mini Cinta Rombos Turquesa",
+    "precio": 12,
+    "categoria": "mini-etnicas",
+    "imagen": "mini-cinta-rombos-turquesa.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliamida",
+      "Acrílico"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-zig-zag-marino",
+    "nombre": "Mini Cinta Zig Zag Marino",
+    "precio": 12,
+    "categoria": "mini-etnicas",
+    "imagen": "mini-cinta-zig-zag-marino.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliamida",
+      "Acrílico"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-atenas",
+    "nombre": "Mini Cinta Atenas",
+    "precio": 12,
+    "categoria": "mini-gobelino",
+    "imagen": "mini-cinta-atenas.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-atenas-o",
+    "nombre": "Mini Cinta Atenas O",
+    "precio": 12,
+    "categoria": "mini-gobelino",
+    "imagen": "mini-cinta-atenas-o.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-berlin",
+    "nombre": "Mini Cinta Berlín",
+    "precio": 12,
+    "categoria": "mini-gobelino",
+    "imagen": "mini-cinta-berlin.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-bruselas",
+    "nombre": "Mini Cinta Bruselas",
+    "precio": 12,
+    "categoria": "mini-gobelino",
+    "imagen": "mini-cinta-bruselas.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-dublin-h",
+    "nombre": "Mini Cinta Dublín H",
+    "precio": 12,
+    "categoria": "mini-gobelino",
+    "imagen": "mini-cinta-dublin-h.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-estambul",
+    "nombre": "Mini Cinta Estambul",
+    "precio": 12,
+    "categoria": "mini-gobelino",
+    "imagen": "mini-cinta-estambul.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-ibiza-azul",
+    "nombre": "Mini Cinta Ibiza Azul",
+    "precio": 12,
+    "categoria": "mini-gobelino",
+    "imagen": "mini-cinta-ibiza-azul.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-lisboa",
+    "nombre": "Mini Cinta Lisboa",
+    "precio": 12,
+    "categoria": "mini-gobelino",
+    "imagen": "mini-cinta-lisboa.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-menorca",
+    "nombre": "Mini Cinta Menorca",
+    "precio": 12,
+    "categoria": "mini-gobelino",
+    "imagen": "mini-cinta-menorca.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-nueva-york",
+    "nombre": "Mini Cinta Nueva York",
+    "precio": 12,
+    "categoria": "mini-gobelino",
+    "imagen": "mini-cinta-nueva-york.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-roma",
+    "nombre": "Mini Cinta Roma",
+    "precio": 12,
+    "categoria": "mini-gobelino",
+    "imagen": "mini-cinta-roma.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-sahara-blanca",
+    "nombre": "Mini Cinta Sáhara Blanca",
+    "precio": 12,
+    "categoria": "mini-gobelino",
+    "imagen": "mini-cinta-sahara-blanca.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-tanger",
+    "nombre": "Mini Cinta Tánger",
+    "precio": 12,
+    "categoria": "mini-gobelino",
+    "imagen": "mini-cinta-tanger.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-viena",
+    "nombre": "Mini Cinta Viena",
+    "precio": 12,
+    "categoria": "mini-gobelino",
+    "imagen": "mini-cinta-viena.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "mini-cinta-roma-roja",
+    "nombre": "Mini Cinta Roma Roja",
+    "precio": 12,
+    "categoria": "mini-gobelino",
+    "imagen": "mini-cinta-roma-roja.webp",
+    "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ],
+    "dimensiones": "40x3 cm"
+  },
+  {
+    "id": "llavero-rombos-musgo",
+    "nombre": "Llavero Rombos Musgo",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-rombos-musgo.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-rombos-negro-y-blanco",
+    "nombre": "Llavero Rombos Negro Y Blanco",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-rombos-negro-y-blanco.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-zig-zag-caqui",
+    "nombre": "Llavero Zig Zag Caqui",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-zig-zag-caqui.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-rombos-berenjena",
+    "nombre": "Llavero Rombos Berenjena",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-rombos-berenjena.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-rombos-verde",
+    "nombre": "Llavero Rombos Verde",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-rombos-verde.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-zig-zag-azules",
+    "nombre": "Llavero Zig Zag Azules",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-zig-zag-azules.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-zig-zag-blanco",
+    "nombre": "Llavero Zig Zag Blanco",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-zig-zag-blanco.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-zig-zag-rojo",
+    "nombre": "Llavero Zig Zag Rojo",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-zig-zag-rojo.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-zig-zag-rosa",
+    "nombre": "Llavero Zig Zag Rosa",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-zig-zag-rosa.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-zig-zag-negro",
+    "nombre": "Llavero Zig Zag Negro",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-zig-zag-negro.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-zig-zag-ocre",
+    "nombre": "Llavero Zig Zag Ocre",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-zig-zag-ocre.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-rombos-amarillo",
+    "nombre": "Llavero Rombos Amarillo",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-rombos-amarillo.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-rombos-azul",
+    "nombre": "Llavero Rombos Azul",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-rombos-azul.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-rombos-gris",
+    "nombre": "Llavero Rombos Gris",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-rombos-gris.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-rombos-madera",
+    "nombre": "Llavero Rombos Madera",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-rombos-madera.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-rombos-morado",
+    "nombre": "Llavero Rombos Morado",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-rombos-morado.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-rombos-naranja",
+    "nombre": "Llavero Rombos Naranja",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-rombos-naranja.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-zig-zag-amarillo",
+    "nombre": "Llavero Zig Zag Amarillo",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-zig-zag-amarillo.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-zig-zag-marino",
+    "nombre": "Llavero Zig Zag Marino",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-zig-zag-marino.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-zig-zag-turquesa",
+    "nombre": "Llavero Zig Zag Turquesa",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-zig-zag-turquesa.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-zig-zag-colorines",
+    "nombre": "Llavero Zig Zag Colorines",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-zig-zag-colorines.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-zig-zag-coral",
+    "nombre": "Llavero Zig Zag Coral",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-zig-zag-coral.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-zig-zag-granate",
+    "nombre": "Llavero Zig Zag Granate",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-zig-zag-granate.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-zig-zag-gris",
+    "nombre": "Llavero Zig Zag Gris",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-zig-zag-gris.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-zig-zag-negro-colores",
+    "nombre": "Llavero Zig Zag Negro Colores",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-zig-zag-negro-colores.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-zig-zag-tricolor-ocre",
+    "nombre": "Llavero Zig Zag Tricolor Ocre",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-zig-zag-tricolor-ocre.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-zig-zag-tricolor",
+    "nombre": "Llavero Zig Zag Tricolor",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-zig-zag-tricolor.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
+  },
+  {
+    "id": "llavero-zig-zag-verdes",
+    "nombre": "Llavero Zig Zag Verdes",
+    "precio": 8,
+    "categoria": "llaveros",
+    "imagen": "llavero-zig-zag-verdes.webp",
+    "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
+    "materiales": [
+      "Algodón",
+      "Poliéster"
+    ]
   }
 ]
