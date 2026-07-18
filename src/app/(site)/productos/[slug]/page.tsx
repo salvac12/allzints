@@ -138,7 +138,7 @@ export default async function ProductPage({ params }: Props) {
 
             {isCinta ? (
               /* Descripción estándar + materiales y medidas con iconos */
-              <CintaSpecs />
+              <CintaSpecs categoria={product.categoria} />
             ) : (
               <>
                 <p className="mt-6 text-mid leading-relaxed">
@@ -208,8 +208,8 @@ export default async function ProductPage({ params }: Props) {
             {/* Artisan disclaimer */}
             <p className="mt-6 text-xs text-mid italic leading-relaxed">
               * Al tratarse de un producto artesanal, pueden existir pequeñas
-              variaciones en color y textura respecto a la imagen. Cada pieza es
-              única y eso forma parte de su encanto.
+              variaciones en color, textura y tamaño respecto a la imagen. Cada
+              pieza es única y eso forma parte de su encanto.
             </p>
           </div>
         </div>

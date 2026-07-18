@@ -1,7 +1,15 @@
 const STANDARD_DESCRIPTION =
   "Elegante Zinta para el Móvil fabricada en España, con un toque elegante y cómodo para tus looks, se adapta a todas las carcasas móviles gracias al adaptador incluido con la compra de la Zinta.";
 
-const specs = [
+const TEJIDO: Record<string, string> = {
+  etnicas: "Algodón, acrílico y poliamida",
+  tapiceria: "Algodón y poliéster",
+};
+
+const CUIDADO =
+  "Apta para lavado a máquina en programa suave. Recomendamos introducirla en una bolsa de lavado para evitar que se enganche con otras prendas.";
+
+const buildSpecs = (categoria: string) => [
   {
     label: "Medidas",
     value: "Largo: 120 cm · Ancho: 3 cm",
@@ -29,7 +37,7 @@ const specs = [
   },
   {
     label: "Tejido",
-    value: "Algodón",
+    value: TEJIDO[categoria] ?? "Algodón",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +62,7 @@ const specs = [
   },
   {
     label: "Cuidado",
-    value: "Lavar a mano",
+    value: CUIDADO,
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +87,8 @@ const specs = [
   },
 ];
 
-export default function CintaSpecs() {
+export default function CintaSpecs({ categoria }: { categoria: string }) {
+  const specs = buildSpecs(categoria);
   return (
     <div className="mt-6">
       <p className="text-mid leading-relaxed">{STANDARD_DESCRIPTION}</p>
