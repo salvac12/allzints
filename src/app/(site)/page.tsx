@@ -5,7 +5,6 @@ import PhotoCarousel from "@/components/PhotoCarousel";
 const heroImages = [
   { src: "/images/productos/Hero-Modelo-Budapest.jpg", alt: "Modelo con cinta de móvil Budapest" },
   { src: "/images/productos/Cinta-Etnica-Fucsia.webp", alt: "Cinta de móvil étnica fucsia" },
-  { src: "/images/productos/Hero-Lisboa.jpg", alt: "Bolso y cinta de móvil Lisboa" },
   { src: "/images/productos/Cinta-Santorini.webp", alt: "Cinta de móvil Santorini" },
   { src: "/images/productos/Hero-Modelo-NY.jpg", alt: "Modelo con bolso Nueva York" },
   { src: "/images/productos/Cinta-Etnica-Mostaza.webp", alt: "Cinta de móvil étnica mostaza" },

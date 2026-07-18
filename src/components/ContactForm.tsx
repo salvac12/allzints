@@ -18,7 +18,10 @@ export default function ContactForm() {
         headers: { Accept: "application/json" },
         body: data,
       });
-      if (!res.ok) throw new Error("send failed");
+      // FormSubmit responde 200 con {"success":"true"|"false"} — no basta con res.ok
+      const result = await res.json().catch(() => null);
+      const success = String(result?.success) === "true";
+      if (!res.ok || !success) throw new Error("send failed");
       setStatus("sent");
       form.reset();
     } catch {
@@ -28,7 +31,10 @@ export default function ContactForm() {
 
   if (status === "sent") {
     return (
-      <div className="bg-white rounded-card p-8 text-center shadow-sm">
+      <div
+        role="alert"
+        className="bg-white rounded-card p-8 text-center shadow-sm"
+      >
         <h3 className="font-heading text-2xl text-texto">¡Mensaje enviado!</h3>
         <p className="mt-3 text-mid">
           Gracias por escribirnos. Te responderemos lo antes posible.
@@ -88,7 +94,7 @@ export default function ContactForm() {
         {status === "sending" ? "Enviando…" : "Enviar mensaje"}
       </button>
       {status === "error" && (
-        <p className="text-sm text-red-600 text-center">
+        <p role="alert" className="text-sm text-red-600 text-center">
           No se pudo enviar el mensaje. Inténtalo de nuevo o escríbenos a
           info@allzints.com.
         </p>

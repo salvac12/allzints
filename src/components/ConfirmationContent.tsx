@@ -116,7 +116,7 @@ export default function ConfirmationContent() {
             <p className="text-sm text-mid">
               Escríbenos por{" "}
               <a
-                href="https://wa.me/34600000000"
+                href="https://wa.me/34649738682"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-terracotta hover:text-terracotta-light underline"

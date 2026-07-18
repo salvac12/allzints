@@ -187,7 +187,7 @@ export default async function ProductPage({ params }: Props) {
                 stock={product.stock}
               />
               <a
-                href={`https://wa.me/34600000000?text=Hola, me interesa el producto: ${product.nombre}`}
+                href={`https://wa.me/34649738682?text=Hola, me interesa el producto: ${product.nombre}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full py-3 rounded-card border-2 border-border text-texto hover:border-terracotta hover:text-terracotta transition-colors font-medium"

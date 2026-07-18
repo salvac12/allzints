@@ -51,18 +51,25 @@ const FLIPPED_IMAGES = [
 async function updateBolsos() {
   const bolsos = await client.fetch(`*[_type == "product" && categoria == "bolsos"]{_id, nombre, precio}`);
   console.log(`Bolsos en Sanity: ${bolsos.length}`);
+  let ok = 0;
   for (const b of bolsos) {
-    await client
-      .patch(b._id)
-      .set({
-        precio: 25,
-        descripcion: BOLSO_DESC,
-        materiales: ["Tela de gobelino", "Forro de tela de toldo"],
-        dimensiones: "20x30 cm",
-      })
-      .commit();
-    console.log(`  ✔ ${b.nombre}: precio ${b.precio} → 25, descripción actualizada`);
+    try {
+      await client
+        .patch(b._id)
+        .set({
+          precio: 25,
+          descripcion: BOLSO_DESC,
+          materiales: ["Tela de gobelino", "Forro de tela de toldo"],
+          dimensiones: "20x30 cm",
+        })
+        .commit();
+      ok++;
+      console.log(`  ✔ ${b.nombre}: precio ${b.precio} → 25, descripción actualizada`);
+    } catch (e) {
+      console.error(`  ✖ ${b.nombre}: ${e.message}`);
+    }
   }
+  console.log(`Bolsos actualizados: ${ok}/${bolsos.length}`);
 }
 
 async function updateFlippedImages() {
@@ -71,6 +78,7 @@ async function updateFlippedImages() {
     `*[_type == "product" && defined(imagen.asset)]{_id, nombre, "filename": imagen.asset->originalFilename}`
   );
   const byFilename = new Map(products.map((p) => [p.filename, p]));
+  let ok = 0;
   for (const file of FLIPPED_IMAGES) {
     const p = byFilename.get(file);
     if (!p) {
@@ -82,13 +90,19 @@ async function updateFlippedImages() {
       console.warn(`  ⚠ No existe fichero local ${file} — omitido`);
       continue;
     }
-    const asset = await client.assets.upload("image", createReadStream(local), { filename: file });
-    await client
-      .patch(p._id)
-      .set({ imagen: { _type: "image", asset: { _type: "reference", _ref: asset._id } } })
-      .commit();
-    console.log(`  ✔ ${p.nombre}: imagen volteada subida (${file})`);
+    try {
+      const asset = await client.assets.upload("image", createReadStream(local), { filename: file });
+      await client
+        .patch(p._id)
+        .set({ imagen: { _type: "image", asset: { _type: "reference", _ref: asset._id } } })
+        .commit();
+      ok++;
+      console.log(`  ✔ ${p.nombre}: imagen volteada subida (${file})`);
+    } catch (e) {
+      console.error(`  ✖ ${p.nombre} (${file}): ${e.message}`);
+    }
   }
+  console.log(`Imágenes actualizadas: ${ok}`);
 }
 
 console.log("— Actualizando bolsos…");
