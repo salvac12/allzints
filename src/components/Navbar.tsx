@@ -26,7 +26,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50">
       {/* Announcement bar */}
-      <div className="bg-terracotta text-white text-center py-2 text-sm font-body">
+      <div className="bg-dark text-white text-center py-2 text-sm font-body">
         Envío gratuito a partir de 50€
       </div>
 
