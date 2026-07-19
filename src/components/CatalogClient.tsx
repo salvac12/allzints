@@ -170,11 +170,11 @@ export default function CatalogClient({ products }: CatalogClientProps) {
         <div className="max-w-3xl mx-auto text-center mb-12">
           <p className="text-mid leading-relaxed text-base md:text-lg text-balance">
             Estamos preparando nuevas colecciones hechas a mano con el mismo
-            mimo que nuestras Zintas. Cinturones, abanicos, llaveros y mini
-            Zintas llegarán muy pronto. ¡Vuelve para descubrirlas!
+            mimo que nuestras Zintas. Cinturones, abanicos y correas de perro
+            llegarán muy pronto. ¡Vuelve para descubrirlas!
           </p>
 
-          <div className="grid grid-cols-2 gap-6 mt-10">
+          <div className="grid grid-cols-3 gap-3 sm:gap-6 mt-10">
             {otrosTiles.map((tile) => (
               <div
                 key={tile.label}
@@ -187,17 +187,17 @@ export default function CatalogClient({ products }: CatalogClientProps) {
                     alt={tile.label}
                     fill
                     className="object-cover object-center"
-                    sizes="(max-width: 640px) 50vw, 33vw"
+                    sizes="33vw"
                   />
                 ) : (
                   <div className="absolute inset-0 bg-gradient-to-br from-cream to-terracotta/20" />
                 )}
                 {/* Velo + etiqueta "Próximamente" */}
                 <div className="absolute inset-0 bg-texto/20" />
-                <span className="absolute top-3 left-1/2 -translate-x-1/2 bg-terracotta text-white text-xs px-3 py-1 rounded-full font-medium uppercase tracking-wide">
+                <span className="absolute top-2 sm:top-3 left-1/2 -translate-x-1/2 bg-terracotta text-white text-[10px] sm:text-xs px-2 sm:px-3 py-0.5 sm:py-1 rounded-full font-medium uppercase tracking-wide whitespace-nowrap">
                   Próximamente
                 </span>
-                <span className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-cream/90 text-texto text-sm px-4 py-1 rounded-full font-medium">
+                <span className="absolute bottom-2 sm:bottom-3 left-1/2 -translate-x-1/2 bg-cream/90 text-texto text-[11px] sm:text-sm px-2 sm:px-4 py-0.5 sm:py-1 rounded-full font-medium whitespace-nowrap">
                   {tile.label}
                 </span>
               </div>
