@@ -59,9 +59,12 @@ export default function CatalogClient({ products }: CatalogClientProps) {
 
   // "Otros": categorías en preparación (próximamente). Rellenar `img` al añadir foto.
   const otrosTiles: { label: string; img: string | null }[] = [
-    { label: "Cinturones", img: null },
-    { label: "Correas de Perro", img: null },
-    { label: "Abanicos", img: null },
+    { label: "Cinturones", img: "/images/productos/otros-cinturones.webp" },
+    {
+      label: "Correas de Perro",
+      img: "/images/productos/otros-correas-perro.webp",
+    },
+    { label: "Abanicos", img: "/images/productos/otros-abanicos.webp" },
   ];
 
   return (
