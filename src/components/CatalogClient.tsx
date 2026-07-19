@@ -223,8 +223,8 @@ export default function CatalogClient({ products }: CatalogClientProps) {
       {activeFilter === "llaveros" && (
         <div className="max-w-3xl mx-auto text-center mb-12">
           <p className="text-mid leading-relaxed text-base md:text-lg text-balance">
-            Nuestros llaveros artesanales están tejidos a mano con los mismos
-            tejidos que nuestras Zintas, con una anilla metálica resistente
+            Nuestros llaveros artesanales están tejidos a mano en tela de
+            poliéster y jacquard, con flecos y una anilla metálica resistente
             para que siempre lleves un toque de color en tus llaves.
           </p>
         </div>
