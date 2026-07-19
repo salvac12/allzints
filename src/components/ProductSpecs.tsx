@@ -8,7 +8,7 @@ const DESCRIPCIONES: Record<string, string> = {
   "mini-gobelino":
     "Elegante Mini Zinta para el móvil o las llaves, fabricada en España, con un toque elegante y cómodo. Incluye mosquetón y adaptador para el móvil.",
   llaveros:
-    "Llavero artesanal tejido a mano en España, con mosquetón y anilla metálica resistente para tus llaves.",
+    "Llavero artesanal tejido a mano en España, con anilla metálica resistente para tus llaves.",
 };
 
 const MEDIDAS: Record<string, string> = {
