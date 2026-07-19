@@ -66,8 +66,9 @@ export default function Home() {
             showDots={false}
           />
         </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-dark/70 via-dark/40 to-dark/10" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36 lg:py-44">
-          <div className="max-w-2xl bg-dark/55 backdrop-blur-sm rounded-card p-6 sm:p-8">
+          <div className="max-w-2xl">
             <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight text-white">
               Accesorios diferentes y artesanales
             </h1>
