@@ -878,7 +878,7 @@
       "Poliamida",
       "Acrílico"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-etnica-fluor-naranja",
@@ -892,7 +892,7 @@
       "Poliamida",
       "Acrílico"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-etnica-marino",
@@ -906,12 +906,12 @@
       "Poliamida",
       "Acrílico"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-fina-espiga-negra",
     "nombre": "Mini Cinta Fina Espiga Negra",
-    "precio": 12,
+    "precio": 10,
     "categoria": "mini-etnicas",
     "imagen": "mini-cinta-fina-espiga-negra.webp",
     "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
@@ -920,12 +920,12 @@
       "Poliamida",
       "Acrílico"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-fina-espiga-beige",
     "nombre": "Mini Cinta Fina Espiga Beige",
-    "precio": 12,
+    "precio": 10,
     "categoria": "mini-etnicas",
     "imagen": "mini-cinta-fina-espiga-beige.webp",
     "descripcion": "Mini Zinta para móvil o llaves, con mosquetón y adaptador incluido. Hecha a mano.",
@@ -934,7 +934,7 @@
       "Poliamida",
       "Acrílico"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-fluor-amarilla",
@@ -948,7 +948,7 @@
       "Poliamida",
       "Acrílico"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-fluor-coral",
@@ -962,7 +962,7 @@
       "Poliamida",
       "Acrílico"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-fluor-naranja",
@@ -976,7 +976,7 @@
       "Poliamida",
       "Acrílico"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-fluor-verde",
@@ -990,7 +990,7 @@
       "Poliamida",
       "Acrílico"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-rombos-beige",
@@ -1004,7 +1004,7 @@
       "Poliamida",
       "Acrílico"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-rombos-fucsia",
@@ -1018,7 +1018,7 @@
       "Poliamida",
       "Acrílico"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-rombos-marino",
@@ -1032,7 +1032,7 @@
       "Poliamida",
       "Acrílico"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-rombos-mostaza",
@@ -1046,7 +1046,7 @@
       "Poliamida",
       "Acrílico"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-zig-zag-beige",
@@ -1060,7 +1060,7 @@
       "Poliamida",
       "Acrílico"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-zig-zag-caza",
@@ -1074,7 +1074,7 @@
       "Poliamida",
       "Acrílico"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-zig-zag-negra",
@@ -1088,7 +1088,7 @@
       "Poliamida",
       "Acrílico"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-zig-zag-teja",
@@ -1102,7 +1102,7 @@
       "Poliamida",
       "Acrílico"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-zig-zag-turquesa",
@@ -1116,7 +1116,7 @@
       "Poliamida",
       "Acrílico"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-rombos-teja",
@@ -1130,7 +1130,7 @@
       "Poliamida",
       "Acrílico"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-rombos-turquesa",
@@ -1144,7 +1144,7 @@
       "Poliamida",
       "Acrílico"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-zig-zag-marino",
@@ -1158,7 +1158,7 @@
       "Poliamida",
       "Acrílico"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-atenas",
@@ -1171,7 +1171,7 @@
       "Algodón",
       "Poliéster"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-atenas-o",
@@ -1184,7 +1184,7 @@
       "Algodón",
       "Poliéster"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-berlin",
@@ -1197,7 +1197,7 @@
       "Algodón",
       "Poliéster"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-bruselas",
@@ -1210,7 +1210,7 @@
       "Algodón",
       "Poliéster"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-dublin-h",
@@ -1223,7 +1223,7 @@
       "Algodón",
       "Poliéster"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-estambul",
@@ -1236,7 +1236,7 @@
       "Algodón",
       "Poliéster"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-ibiza-azul",
@@ -1249,7 +1249,7 @@
       "Algodón",
       "Poliéster"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-lisboa",
@@ -1262,7 +1262,7 @@
       "Algodón",
       "Poliéster"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-menorca",
@@ -1275,7 +1275,7 @@
       "Algodón",
       "Poliéster"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-nueva-york",
@@ -1288,7 +1288,7 @@
       "Algodón",
       "Poliéster"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-roma",
@@ -1301,7 +1301,7 @@
       "Algodón",
       "Poliéster"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-sahara-blanca",
@@ -1314,7 +1314,7 @@
       "Algodón",
       "Poliéster"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-tanger",
@@ -1327,7 +1327,7 @@
       "Algodón",
       "Poliéster"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-viena",
@@ -1340,7 +1340,7 @@
       "Algodón",
       "Poliéster"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "mini-cinta-roma-roja",
@@ -1353,7 +1353,7 @@
       "Algodón",
       "Poliéster"
     ],
-    "dimensiones": "40x3 cm"
+    "dimensiones": "20 cm"
   },
   {
     "id": "llavero-rombos-musgo",
@@ -1363,9 +1363,9 @@
     "imagen": "llavero-rombos-musgo.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-rombos-negro-y-blanco",
@@ -1375,9 +1375,9 @@
     "imagen": "llavero-rombos-negro-y-blanco.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-zig-zag-caqui",
@@ -1387,9 +1387,9 @@
     "imagen": "llavero-zig-zag-caqui.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-rombos-berenjena",
@@ -1399,9 +1399,9 @@
     "imagen": "llavero-rombos-berenjena.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-rombos-verde",
@@ -1411,9 +1411,9 @@
     "imagen": "llavero-rombos-verde.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-zig-zag-azules",
@@ -1423,9 +1423,9 @@
     "imagen": "llavero-zig-zag-azules.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-zig-zag-blanco",
@@ -1435,9 +1435,9 @@
     "imagen": "llavero-zig-zag-blanco.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-zig-zag-rojo",
@@ -1447,9 +1447,9 @@
     "imagen": "llavero-zig-zag-rojo.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-zig-zag-rosa",
@@ -1459,9 +1459,9 @@
     "imagen": "llavero-zig-zag-rosa.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-zig-zag-negro",
@@ -1471,9 +1471,9 @@
     "imagen": "llavero-zig-zag-negro.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-zig-zag-ocre",
@@ -1483,9 +1483,9 @@
     "imagen": "llavero-zig-zag-ocre.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-rombos-amarillo",
@@ -1495,9 +1495,9 @@
     "imagen": "llavero-rombos-amarillo.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-rombos-azul",
@@ -1507,9 +1507,9 @@
     "imagen": "llavero-rombos-azul.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-rombos-gris",
@@ -1519,9 +1519,9 @@
     "imagen": "llavero-rombos-gris.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-rombos-madera",
@@ -1531,9 +1531,9 @@
     "imagen": "llavero-rombos-madera.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-rombos-morado",
@@ -1543,9 +1543,9 @@
     "imagen": "llavero-rombos-morado.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-rombos-naranja",
@@ -1555,9 +1555,9 @@
     "imagen": "llavero-rombos-naranja.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-zig-zag-amarillo",
@@ -1567,9 +1567,9 @@
     "imagen": "llavero-zig-zag-amarillo.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-zig-zag-marino",
@@ -1579,9 +1579,9 @@
     "imagen": "llavero-zig-zag-marino.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-zig-zag-turquesa",
@@ -1591,9 +1591,9 @@
     "imagen": "llavero-zig-zag-turquesa.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-zig-zag-colorines",
@@ -1603,9 +1603,9 @@
     "imagen": "llavero-zig-zag-colorines.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-zig-zag-coral",
@@ -1615,9 +1615,9 @@
     "imagen": "llavero-zig-zag-coral.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-zig-zag-granate",
@@ -1627,9 +1627,9 @@
     "imagen": "llavero-zig-zag-granate.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-zig-zag-gris",
@@ -1639,9 +1639,9 @@
     "imagen": "llavero-zig-zag-gris.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-zig-zag-negro-colores",
@@ -1651,9 +1651,9 @@
     "imagen": "llavero-zig-zag-negro-colores.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-zig-zag-tricolor-ocre",
@@ -1663,9 +1663,9 @@
     "imagen": "llavero-zig-zag-tricolor-ocre.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-zig-zag-tricolor",
@@ -1675,9 +1675,9 @@
     "imagen": "llavero-zig-zag-tricolor.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   },
   {
     "id": "llavero-zig-zag-verdes",
@@ -1687,8 +1687,8 @@
     "imagen": "llavero-zig-zag-verdes.webp",
     "descripcion": "Llavero artesanal tejido a mano con anilla metálica.",
     "materiales": [
-      "Algodón",
       "Poliéster"
-    ]
+    ],
+    "dimensiones": "17 cm"
   }
 ]
