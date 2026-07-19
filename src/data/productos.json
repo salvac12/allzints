@@ -868,7 +868,7 @@
   },
   {
     "id": "mini-cinta-elastica",
-    "nombre": "Mini Cinta Elástica",
+    "nombre": "Mini Zinta Elástica",
     "precio": 12,
     "categoria": "mini-etnicas",
     "imagen": "mini-cinta-elastica.webp",
@@ -882,7 +882,7 @@
   },
   {
     "id": "mini-cinta-etnica-fluor-naranja",
-    "nombre": "Mini Cinta Étnica Flúor Naranja",
+    "nombre": "Mini Zinta Étnica Flúor Naranja",
     "precio": 12,
     "categoria": "mini-etnicas",
     "imagen": "mini-cinta-etnica-fluor-naranja.webp",
@@ -896,7 +896,7 @@
   },
   {
     "id": "mini-cinta-etnica-marino",
-    "nombre": "Mini Cinta Étnica Marino",
+    "nombre": "Mini Zinta Étnica Marino",
     "precio": 12,
     "categoria": "mini-etnicas",
     "imagen": "mini-cinta-etnica-marino.webp",
@@ -910,7 +910,7 @@
   },
   {
     "id": "mini-cinta-fina-espiga-negra",
-    "nombre": "Mini Cinta Fina Espiga Negra",
+    "nombre": "Mini Zinta Fina Espiga Negra",
     "precio": 10,
     "categoria": "mini-etnicas",
     "imagen": "mini-cinta-fina-espiga-negra.webp",
@@ -924,7 +924,7 @@
   },
   {
     "id": "mini-cinta-fina-espiga-beige",
-    "nombre": "Mini Cinta Fina Espiga Beige",
+    "nombre": "Mini Zinta Fina Espiga Beige",
     "precio": 10,
     "categoria": "mini-etnicas",
     "imagen": "mini-cinta-fina-espiga-beige.webp",
@@ -938,7 +938,7 @@
   },
   {
     "id": "mini-cinta-fluor-amarilla",
-    "nombre": "Mini Cinta Flúor Amarilla",
+    "nombre": "Mini Zinta Flúor Amarilla",
     "precio": 12,
     "categoria": "mini-etnicas",
     "imagen": "mini-cinta-fluor-amarilla.webp",
@@ -952,7 +952,7 @@
   },
   {
     "id": "mini-cinta-fluor-coral",
-    "nombre": "Mini Cinta Flúor Coral",
+    "nombre": "Mini Zinta Flúor Coral",
     "precio": 12,
     "categoria": "mini-etnicas",
     "imagen": "mini-cinta-fluor-coral.webp",
@@ -966,7 +966,7 @@
   },
   {
     "id": "mini-cinta-fluor-naranja",
-    "nombre": "Mini Cinta Flúor Naranja",
+    "nombre": "Mini Zinta Flúor Naranja",
     "precio": 12,
     "categoria": "mini-etnicas",
     "imagen": "mini-cinta-fluor-naranja.webp",
@@ -980,7 +980,7 @@
   },
   {
     "id": "mini-cinta-fluor-verde",
-    "nombre": "Mini Cinta Flúor Verde",
+    "nombre": "Mini Zinta Flúor Verde",
     "precio": 12,
     "categoria": "mini-etnicas",
     "imagen": "mini-cinta-fluor-verde.webp",
@@ -994,7 +994,7 @@
   },
   {
     "id": "mini-cinta-rombos-beige",
-    "nombre": "Mini Cinta Rombos Beige",
+    "nombre": "Mini Zinta Rombos Beige",
     "precio": 12,
     "categoria": "mini-etnicas",
     "imagen": "mini-cinta-rombos-beige.webp",
@@ -1008,7 +1008,7 @@
   },
   {
     "id": "mini-cinta-rombos-fucsia",
-    "nombre": "Mini Cinta Rombos Fucsia",
+    "nombre": "Mini Zinta Rombos Fucsia",
     "precio": 12,
     "categoria": "mini-etnicas",
     "imagen": "mini-cinta-rombos-fucsia.webp",
@@ -1022,7 +1022,7 @@
   },
   {
     "id": "mini-cinta-rombos-marino",
-    "nombre": "Mini Cinta Rombos Marino",
+    "nombre": "Mini Zinta Rombos Marino",
     "precio": 12,
     "categoria": "mini-etnicas",
     "imagen": "mini-cinta-rombos-marino.webp",
@@ -1036,7 +1036,7 @@
   },
   {
     "id": "mini-cinta-rombos-mostaza",
-    "nombre": "Mini Cinta Rombos Mostaza",
+    "nombre": "Mini Zinta Rombos Mostaza",
     "precio": 12,
     "categoria": "mini-etnicas",
     "imagen": "mini-cinta-rombos-mostaza.webp",
@@ -1050,7 +1050,7 @@
   },
   {
     "id": "mini-cinta-zig-zag-beige",
-    "nombre": "Mini Cinta Zig Zag Beige",
+    "nombre": "Mini Zinta Zig Zag Beige",
     "precio": 12,
     "categoria": "mini-etnicas",
     "imagen": "mini-cinta-zig-zag-beige.webp",
@@ -1064,7 +1064,7 @@
   },
   {
     "id": "mini-cinta-zig-zag-caza",
-    "nombre": "Mini Cinta Zig Zag Caza",
+    "nombre": "Mini Zinta Zig Zag Caza",
     "precio": 12,
     "categoria": "mini-etnicas",
     "imagen": "mini-cinta-zig-zag-caza.webp",
@@ -1078,7 +1078,7 @@
   },
   {
     "id": "mini-cinta-zig-zag-negra",
-    "nombre": "Mini Cinta Zig Zag Negra",
+    "nombre": "Mini Zinta Zig Zag Negra",
     "precio": 12,
     "categoria": "mini-etnicas",
     "imagen": "mini-cinta-zig-zag-negra.webp",
@@ -1092,7 +1092,7 @@
   },
   {
     "id": "mini-cinta-zig-zag-teja",
-    "nombre": "Mini Cinta Zig Zag Teja",
+    "nombre": "Mini Zinta Zig Zag Teja",
     "precio": 12,
     "categoria": "mini-etnicas",
     "imagen": "mini-cinta-zig-zag-teja.webp",
@@ -1106,7 +1106,7 @@
   },
   {
     "id": "mini-cinta-zig-zag-turquesa",
-    "nombre": "Mini Cinta Zig Zag Turquesa",
+    "nombre": "Mini Zinta Zig Zag Turquesa",
     "precio": 12,
     "categoria": "mini-etnicas",
     "imagen": "mini-cinta-zig-zag-turquesa.webp",
@@ -1120,7 +1120,7 @@
   },
   {
     "id": "mini-cinta-rombos-teja",
-    "nombre": "Mini Cinta Rombos Teja",
+    "nombre": "Mini Zinta Rombos Teja",
     "precio": 12,
     "categoria": "mini-etnicas",
     "imagen": "mini-cinta-rombos-teja.webp",
@@ -1134,7 +1134,7 @@
   },
   {
     "id": "mini-cinta-rombos-turquesa",
-    "nombre": "Mini Cinta Rombos Turquesa",
+    "nombre": "Mini Zinta Rombos Turquesa",
     "precio": 12,
     "categoria": "mini-etnicas",
     "imagen": "mini-cinta-rombos-turquesa.webp",
@@ -1148,7 +1148,7 @@
   },
   {
     "id": "mini-cinta-zig-zag-marino",
-    "nombre": "Mini Cinta Zig Zag Marino",
+    "nombre": "Mini Zinta Zig Zag Marino",
     "precio": 12,
     "categoria": "mini-etnicas",
     "imagen": "mini-cinta-zig-zag-marino.webp",
@@ -1162,7 +1162,7 @@
   },
   {
     "id": "mini-cinta-atenas",
-    "nombre": "Mini Cinta Atenas",
+    "nombre": "Mini Zinta Atenas",
     "precio": 12,
     "categoria": "mini-gobelino",
     "imagen": "mini-cinta-atenas.webp",
@@ -1175,7 +1175,7 @@
   },
   {
     "id": "mini-cinta-atenas-o",
-    "nombre": "Mini Cinta Atenas O",
+    "nombre": "Mini Zinta Atenas O",
     "precio": 12,
     "categoria": "mini-gobelino",
     "imagen": "mini-cinta-atenas-o.webp",
@@ -1188,7 +1188,7 @@
   },
   {
     "id": "mini-cinta-berlin",
-    "nombre": "Mini Cinta Berlín",
+    "nombre": "Mini Zinta Berlín",
     "precio": 12,
     "categoria": "mini-gobelino",
     "imagen": "mini-cinta-berlin.webp",
@@ -1201,7 +1201,7 @@
   },
   {
     "id": "mini-cinta-bruselas",
-    "nombre": "Mini Cinta Bruselas",
+    "nombre": "Mini Zinta Bruselas",
     "precio": 12,
     "categoria": "mini-gobelino",
     "imagen": "mini-cinta-bruselas.webp",
@@ -1214,7 +1214,7 @@
   },
   {
     "id": "mini-cinta-dublin-h",
-    "nombre": "Mini Cinta Dublín H",
+    "nombre": "Mini Zinta Dublín H",
     "precio": 12,
     "categoria": "mini-gobelino",
     "imagen": "mini-cinta-dublin-h.webp",
@@ -1227,7 +1227,7 @@
   },
   {
     "id": "mini-cinta-estambul",
-    "nombre": "Mini Cinta Estambul",
+    "nombre": "Mini Zinta Estambul",
     "precio": 12,
     "categoria": "mini-gobelino",
     "imagen": "mini-cinta-estambul.webp",
@@ -1240,7 +1240,7 @@
   },
   {
     "id": "mini-cinta-ibiza-azul",
-    "nombre": "Mini Cinta Ibiza Azul",
+    "nombre": "Mini Zinta Ibiza Azul",
     "precio": 12,
     "categoria": "mini-gobelino",
     "imagen": "mini-cinta-ibiza-azul.webp",
@@ -1253,7 +1253,7 @@
   },
   {
     "id": "mini-cinta-lisboa",
-    "nombre": "Mini Cinta Lisboa",
+    "nombre": "Mini Zinta Lisboa",
     "precio": 12,
     "categoria": "mini-gobelino",
     "imagen": "mini-cinta-lisboa.webp",
@@ -1266,7 +1266,7 @@
   },
   {
     "id": "mini-cinta-menorca",
-    "nombre": "Mini Cinta Menorca",
+    "nombre": "Mini Zinta Menorca",
     "precio": 12,
     "categoria": "mini-gobelino",
     "imagen": "mini-cinta-menorca.webp",
@@ -1279,7 +1279,7 @@
   },
   {
     "id": "mini-cinta-nueva-york",
-    "nombre": "Mini Cinta Nueva York",
+    "nombre": "Mini Zinta Nueva York",
     "precio": 12,
     "categoria": "mini-gobelino",
     "imagen": "mini-cinta-nueva-york.webp",
@@ -1292,7 +1292,7 @@
   },
   {
     "id": "mini-cinta-roma",
-    "nombre": "Mini Cinta Roma",
+    "nombre": "Mini Zinta Roma",
     "precio": 12,
     "categoria": "mini-gobelino",
     "imagen": "mini-cinta-roma.webp",
@@ -1305,7 +1305,7 @@
   },
   {
     "id": "mini-cinta-sahara-blanca",
-    "nombre": "Mini Cinta Sáhara Blanca",
+    "nombre": "Mini Zinta Sáhara Blanca",
     "precio": 12,
     "categoria": "mini-gobelino",
     "imagen": "mini-cinta-sahara-blanca.webp",
@@ -1318,7 +1318,7 @@
   },
   {
     "id": "mini-cinta-tanger",
-    "nombre": "Mini Cinta Tánger",
+    "nombre": "Mini Zinta Tánger",
     "precio": 12,
     "categoria": "mini-gobelino",
     "imagen": "mini-cinta-tanger.webp",
@@ -1331,7 +1331,7 @@
   },
   {
     "id": "mini-cinta-viena",
-    "nombre": "Mini Cinta Viena",
+    "nombre": "Mini Zinta Viena",
     "precio": 12,
     "categoria": "mini-gobelino",
     "imagen": "mini-cinta-viena.webp",
@@ -1344,7 +1344,7 @@
   },
   {
     "id": "mini-cinta-roma-roja",
-    "nombre": "Mini Cinta Roma Roja",
+    "nombre": "Mini Zinta Roma Roja",
     "precio": 12,
     "categoria": "mini-gobelino",
     "imagen": "mini-cinta-roma-roja.webp",

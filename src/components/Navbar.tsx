@@ -7,7 +7,7 @@ import { useCartStore, useCartCount } from "@/store/cartStore";
 
 const leftLinks = [
   { label: "Zintas", href: "/productos?categoria=zintas" },
-  { label: "Mini Cintas", href: "/productos?categoria=mini" },
+  { label: "Mini Zintas", href: "/productos?categoria=mini" },
   { label: "Bolsos", href: "/productos?categoria=bolsos" },
   { label: "Llaveros", href: "/productos?categoria=llaveros" },
   { label: "Otros", href: "/productos?categoria=otros" },

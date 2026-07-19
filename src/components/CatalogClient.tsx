@@ -42,16 +42,16 @@ export default function CatalogClient({ products }: CatalogClientProps) {
   // Categorías aún sin catálogo cargado (fotos/productos pendientes) → mensaje suave
   const enPreparacion: string[] = [];
 
-  // "Mini Cintas": dos subcategorías (como Zintas). Rellenar `img` con la foto
+  // "Mini Zintas": dos subcategorías (como Zintas). Rellenar `img` con la foto
   // cuando esté (p. ej. "/images/productos/Mini-Cinta-Etnica.webp").
   const miniTiles: { label: string; filter: string; img: string | null }[] = [
     {
-      label: "Mini Cinta Étnicas",
+      label: "Mini Zinta Étnicas",
       filter: "mini-etnicas",
       img: "/images/productos/mini-cinta-rombos-mostaza.webp",
     },
     {
-      label: "Mini Cinta Gobelino",
+      label: "Mini Zinta Gobelino",
       filter: "mini-gobelino",
       img: "/images/productos/mini-cinta-atenas.webp",
     },
@@ -124,11 +124,11 @@ export default function CatalogClient({ products }: CatalogClientProps) {
         </div>
       )}
 
-      {/* Intro Mini Cintas: dos subcategorías (Étnicas / Gobelino) */}
+      {/* Intro Mini Zintas: dos subcategorías (Étnicas / Gobelino) */}
       {showMiniIntro && (
         <div className="max-w-3xl mx-auto text-center mb-12">
           <p className="text-mid leading-relaxed">
-            Nuestras Mini Cintas: la versión más compacta de nuestras Zintas,
+            Nuestras Mini Zintas: la versión más compacta de nuestras Zintas,
             hechas a mano con las mismas telas. El complemento perfecto para dar
             un toque artesanal a tus accesorios. Elige entre tejido étnico o
             gobelino.

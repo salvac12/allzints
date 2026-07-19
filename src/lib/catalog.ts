@@ -30,8 +30,8 @@ export const categoryLabels: Record<string, string> = {
   bolsos: "Bolsos",
   etnicas: "Zintas Étnicas",
   tapiceria: "Zintas Tapicería",
-  "mini-etnicas": "Mini Cintas Étnicas",
-  "mini-gobelino": "Mini Cintas Gobelino",
+  "mini-etnicas": "Mini Zintas Étnicas",
+  "mini-gobelino": "Mini Zintas Gobelino",
   llaveros: "Llaveros",
   otros: "Otros",
 };

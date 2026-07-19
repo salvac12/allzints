@@ -12,7 +12,7 @@ import {
 } from "@/sanity/queries";
 import AddToCartButton from "@/components/AddToCartButton";
 import ProductGrid from "@/components/ProductGrid";
-import CintaSpecs from "@/components/CintaSpecs";
+import ProductSpecs from "@/components/ProductSpecs";
 import { legacyToProduct, slugify, categoryLabels } from "@/lib/catalog";
 import productosData from "@/data/productos.json";
 
@@ -74,8 +74,6 @@ export default async function ProductPage({ params }: Props) {
       : "/images/productos/Logo.webp";
 
   const outOfStock = product.stock !== undefined && product.stock <= 0;
-  const isCinta =
-    product.categoria === "etnicas" || product.categoria === "tapiceria";
 
   return (
     <div className="bg-cream min-h-screen">
@@ -136,43 +134,11 @@ export default async function ProductPage({ params }: Props) {
               {product.precio.toFixed(2)}€
             </p>
 
-            {isCinta ? (
-              /* Descripción estándar + materiales y medidas con iconos */
-              <CintaSpecs categoria={product.categoria} />
-            ) : (
-              <>
-                <p className="mt-6 text-mid leading-relaxed">
-                  {product.descripcion}
-                </p>
-
-                {/* Materials */}
-                {product.materiales && product.materiales.length > 0 && (
-                  <div className="mt-6">
-                    <h3 className="text-sm font-medium text-texto uppercase tracking-wide">
-                      Materiales
-                    </h3>
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      {product.materiales.map((mat) => (
-                        <span
-                          key={mat}
-                          className="px-3 py-1 bg-white rounded-full text-sm text-mid border border-border"
-                        >
-                          {mat}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {/* Dimensions */}
-                {product.dimensiones && (
-                  <p className="mt-4 text-sm text-mid">
-                    <span className="font-medium text-texto">Dimensiones:</span>{" "}
-                    {product.dimensiones}
-                  </p>
-                )}
-              </>
-            )}
+            {/* Descripción + materiales y medidas con iconos (mismo diseño en todas las categorías) */}
+            <ProductSpecs
+              categoria={product.categoria}
+              descripcion={product.descripcion}
+            />
 
             {/* Actions */}
             <div className="mt-8 space-y-3">

@@ -36,8 +36,8 @@ export default defineType({
           { title: "Bolsos", value: "bolsos" },
           { title: "Zintas Étnicas", value: "etnicas" },
           { title: "Zintas Tapicería", value: "tapiceria" },
-          { title: "Mini Cintas Étnicas", value: "mini-etnicas" },
-          { title: "Mini Cintas Gobelino", value: "mini-gobelino" },
+          { title: "Mini Zintas Étnicas", value: "mini-etnicas" },
+          { title: "Mini Zintas Gobelino", value: "mini-gobelino" },
           { title: "Llaveros", value: "llaveros" },
         ],
         layout: "radio",
@@ -124,8 +124,8 @@ export default defineType({
         bolsos: "Bolso",
         etnicas: "Zinta Étnica",
         tapiceria: "Zinta Tapicería",
-        "mini-etnicas": "Mini Cinta Étnica",
-        "mini-gobelino": "Mini Cinta Gobelino",
+        "mini-etnicas": "Mini Zinta Étnica",
+        "mini-gobelino": "Mini Zinta Gobelino",
         llaveros: "Llavero",
       };
       return {
