@@ -20,11 +20,11 @@ export const metadata: Metadata = {
     template: "%s | All Zints",
   },
   description:
-    "Accesorios artesanales hechos a mano con telas étnicas y de tapicería. Bolsos, cintas para móvil y más. Envío gratis en compras superiores a 50€.",
+    "Accesorios artesanales hechos a mano con telas étnicas y de tapicería. Bolsos, Zintas para móvil y más. Envío gratis en compras superiores a 50€.",
   keywords: [
     "accesorios artesanales",
     "bolsos hechos a mano",
-    "cintas para móvil",
+    "Zintas para móvil",
     "telas étnicas",
     "moda sostenible",
     "All Zints",

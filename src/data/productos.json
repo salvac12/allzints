@@ -274,7 +274,7 @@
   },
   {
     "id": "2101",
-    "nombre": "Cinta Elástica",
+    "nombre": "Zinta Elástica",
     "precio": 15,
     "categoria": "etnicas",
     "imagen": "Cinta-Elastica.webp",
@@ -285,7 +285,7 @@
   },
   {
     "id": "2104",
-    "nombre": "Cinta Fluor Coral",
+    "nombre": "Zinta Fluor Coral",
     "precio": 15,
     "categoria": "etnicas",
     "imagen": "Cinta-Etnica-Fluor-Coral.webp",
@@ -296,7 +296,7 @@
   },
   {
     "id": "2107",
-    "nombre": "Cinta Fluor Amarilla",
+    "nombre": "Zinta Fluor Amarilla",
     "precio": 15,
     "categoria": "etnicas",
     "imagen": "Cinta-Etnica-Fluor-Amarilla.webp",
@@ -307,7 +307,7 @@
   },
   {
     "id": "2109",
-    "nombre": "Cinta Fluor Naranja",
+    "nombre": "Zinta Fluor Naranja",
     "precio": 15,
     "categoria": "etnicas",
     "imagen": "Cinta-Etnica-Fluor-Naranja.webp",
@@ -318,7 +318,7 @@
   },
   {
     "id": "2111",
-    "nombre": "Cinta Fluor Verde",
+    "nombre": "Zinta Fluor Verde",
     "precio": 15,
     "categoria": "etnicas",
     "imagen": "Cinta-Fluor-Verde.webp",
@@ -329,7 +329,7 @@
   },
   {
     "id": "2113",
-    "nombre": "Cinta Zigzag Marino",
+    "nombre": "Zinta Zigzag Marino",
     "precio": 15,
     "categoria": "etnicas",
     "imagen": "Cinta-Zigzag-Marino.webp",
@@ -340,7 +340,7 @@
   },
   {
     "id": "2115",
-    "nombre": "Cinta Fucsia",
+    "nombre": "Zinta Fucsia",
     "precio": 15,
     "categoria": "etnicas",
     "imagen": "Cinta-Etnica-Fucsia.webp",
@@ -351,7 +351,7 @@
   },
   {
     "id": "2117",
-    "nombre": "Cinta Turquesa",
+    "nombre": "Zinta Turquesa",
     "precio": 15,
     "categoria": "etnicas",
     "imagen": "Cinta-Etnica-Turquesa.webp",
@@ -362,7 +362,7 @@
   },
   {
     "id": "2119",
-    "nombre": "Cinta Beige",
+    "nombre": "Zinta Beige",
     "precio": 15,
     "categoria": "etnicas",
     "imagen": "Cinta-Etnica-Beige.webp",
@@ -373,7 +373,7 @@
   },
   {
     "id": "2121",
-    "nombre": "Cinta Zigzag Caza",
+    "nombre": "Zinta Zigzag Caza",
     "precio": 15,
     "categoria": "etnicas",
     "imagen": "Cinta-Zigzag-Caza.webp",
@@ -384,7 +384,7 @@
   },
   {
     "id": "2123",
-    "nombre": "Cinta Mostaza",
+    "nombre": "Zinta Mostaza",
     "precio": 15,
     "categoria": "etnicas",
     "imagen": "Cinta-Etnica-Mostaza.webp",
@@ -395,7 +395,7 @@
   },
   {
     "id": "2125",
-    "nombre": "Cinta Teja",
+    "nombre": "Zinta Teja",
     "precio": 15,
     "categoria": "etnicas",
     "imagen": "Cinta-Etnica-Teja.webp",
@@ -406,7 +406,7 @@
   },
   {
     "id": "2127",
-    "nombre": "Cinta Zigzag Turquesa",
+    "nombre": "Zinta Zigzag Turquesa",
     "precio": 15,
     "categoria": "etnicas",
     "imagen": "Cinta-Zigzag-Turquesa.webp",
@@ -417,7 +417,7 @@
   },
   {
     "id": "2133",
-    "nombre": "Cinta Azulón",
+    "nombre": "Zinta Azulón",
     "precio": 15,
     "categoria": "etnicas",
     "imagen": "Cinta-Etnica-Azulon.webp",
@@ -428,7 +428,7 @@
   },
   {
     "id": "2135",
-    "nombre": "Cinta Manzana",
+    "nombre": "Zinta Manzana",
     "precio": 15,
     "categoria": "etnicas",
     "imagen": "Cinta-Etnica-Manzana.webp",
@@ -439,7 +439,7 @@
   },
   {
     "id": "2137",
-    "nombre": "Cinta Zigzag Negro",
+    "nombre": "Zinta Zigzag Negro",
     "precio": 15,
     "categoria": "etnicas",
     "imagen": "Cinta-Zigzag-Negro.webp",
@@ -450,7 +450,7 @@
   },
   {
     "id": "2140",
-    "nombre": "Cinta Marino",
+    "nombre": "Zinta Marino",
     "precio": 15,
     "categoria": "etnicas",
     "imagen": "Cinta-Etnica-Marino.webp",
@@ -461,7 +461,7 @@
   },
   {
     "id": "2143",
-    "nombre": "Cinta Fina Botella",
+    "nombre": "Zinta Fina Botella",
     "precio": 12,
     "categoria": "etnicas",
     "imagen": "cinta-Fina-Botella.webp",
@@ -472,7 +472,7 @@
   },
   {
     "id": "2145",
-    "nombre": "Cinta Fina Marrón",
+    "nombre": "Zinta Fina Marrón",
     "precio": 12,
     "categoria": "etnicas",
     "imagen": "Cinta-fina-marron.webp",
@@ -483,7 +483,7 @@
   },
   {
     "id": "2147",
-    "nombre": "Cinta Fina Negra",
+    "nombre": "Zinta Fina Negra",
     "precio": 12,
     "categoria": "etnicas",
     "imagen": "cinta-fina-negra.webp",
@@ -494,7 +494,7 @@
   },
   {
     "id": "2149",
-    "nombre": "Cinta Fina Zigzag Beige",
+    "nombre": "Zinta Fina Zigzag Beige",
     "precio": 12,
     "categoria": "etnicas",
     "imagen": "cinta-fina-Zigzag-Beige.webp",
@@ -505,7 +505,7 @@
   },
   {
     "id": "2151",
-    "nombre": "Cinta Fina Zigzag Negra",
+    "nombre": "Zinta Fina Zigzag Negra",
     "precio": 12,
     "categoria": "etnicas",
     "imagen": "Cinta-fina-Zigzag-Negra.webp",
@@ -516,7 +516,7 @@
   },
   {
     "id": "2153",
-    "nombre": "Cinta Zigzag Verde-Beige",
+    "nombre": "Zinta Zigzag Verde-Beige",
     "precio": 15,
     "categoria": "etnicas",
     "imagen": "Cinta-Zigzag-verde-beige.webp",
@@ -527,7 +527,7 @@
   },
   {
     "id": "2156",
-    "nombre": "Cinta Marruecos",
+    "nombre": "Zinta Marruecos",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Marruecos.webp",
@@ -538,7 +538,7 @@
   },
   {
     "id": "2161",
-    "nombre": "Cinta Roma",
+    "nombre": "Zinta Roma",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Roma.webp",
@@ -549,7 +549,7 @@
   },
   {
     "id": "2166",
-    "nombre": "Cinta Atenas V",
+    "nombre": "Zinta Atenas V",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Atenas-V.webp",
@@ -560,7 +560,7 @@
   },
   {
     "id": "2168",
-    "nombre": "Cinta Atenas O",
+    "nombre": "Zinta Atenas O",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Atenas-O.webp",
@@ -571,7 +571,7 @@
   },
   {
     "id": "2171",
-    "nombre": "Cinta Santorini",
+    "nombre": "Zinta Santorini",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Santorini.webp",
@@ -582,7 +582,7 @@
   },
   {
     "id": "2176",
-    "nombre": "Cinta Dublín H",
+    "nombre": "Zinta Dublín H",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Dublin-H.webp",
@@ -593,7 +593,7 @@
   },
   {
     "id": "2179",
-    "nombre": "Cinta Dublín V",
+    "nombre": "Zinta Dublín V",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Dublin-V.webp",
@@ -604,7 +604,7 @@
   },
   {
     "id": "2181",
-    "nombre": "Cinta Bruselas",
+    "nombre": "Zinta Bruselas",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Bruselas.webp",
@@ -615,7 +615,7 @@
   },
   {
     "id": "2184",
-    "nombre": "Cinta Amberes",
+    "nombre": "Zinta Amberes",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Amberes.webp",
@@ -626,7 +626,7 @@
   },
   {
     "id": "2186",
-    "nombre": "Cinta Ibiza Azul",
+    "nombre": "Zinta Ibiza Azul",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Ibiza-Azul.webp",
@@ -637,7 +637,7 @@
   },
   {
     "id": "2188",
-    "nombre": "Cinta Ibiza Rosa",
+    "nombre": "Zinta Ibiza Rosa",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Ibiza-Rosa.webp",
@@ -648,7 +648,7 @@
   },
   {
     "id": "2190",
-    "nombre": "Cinta Londres",
+    "nombre": "Zinta Londres",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Londres.webp",
@@ -659,7 +659,7 @@
   },
   {
     "id": "2193",
-    "nombre": "Cinta Nueva York",
+    "nombre": "Zinta Nueva York",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Nueva-York.webp",
@@ -670,7 +670,7 @@
   },
   {
     "id": "2195",
-    "nombre": "Cinta Lisboa",
+    "nombre": "Zinta Lisboa",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Lisboa.webp",
@@ -681,7 +681,7 @@
   },
   {
     "id": "2199",
-    "nombre": "Cinta Viena",
+    "nombre": "Zinta Viena",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Viena.webp",
@@ -692,7 +692,7 @@
   },
   {
     "id": "2201",
-    "nombre": "Cinta Menorca",
+    "nombre": "Zinta Menorca",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Menorca.webp",
@@ -703,7 +703,7 @@
   },
   {
     "id": "2204",
-    "nombre": "Cinta París",
+    "nombre": "Zinta París",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Paris.webp",
@@ -714,7 +714,7 @@
   },
   {
     "id": "2206",
-    "nombre": "Cinta Berlín",
+    "nombre": "Zinta Berlín",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Berlin.webp",
@@ -725,7 +725,7 @@
   },
   {
     "id": "2209",
-    "nombre": "Cinta Bogotá",
+    "nombre": "Zinta Bogotá",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Bogota.webp",
@@ -736,7 +736,7 @@
   },
   {
     "id": "2211",
-    "nombre": "Cinta Madrid",
+    "nombre": "Zinta Madrid",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Madrid.webp",
@@ -747,7 +747,7 @@
   },
   {
     "id": "2213",
-    "nombre": "Cinta Budapest Verde",
+    "nombre": "Zinta Budapest Verde",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Budapest-Verde.webp",
@@ -758,7 +758,7 @@
   },
   {
     "id": "2216",
-    "nombre": "Cinta Budapest Blanco",
+    "nombre": "Zinta Budapest Blanco",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Budapest-Blanco.webp",
@@ -769,7 +769,7 @@
   },
   {
     "id": "2218",
-    "nombre": "Cinta Barcelona",
+    "nombre": "Zinta Barcelona",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Barcelona_.webp",
@@ -780,7 +780,7 @@
   },
   {
     "id": "2220",
-    "nombre": "Cinta Varsovia",
+    "nombre": "Zinta Varsovia",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Varsovia.webp",
@@ -791,7 +791,7 @@
   },
   {
     "id": "2222",
-    "nombre": "Cinta Mallorca",
+    "nombre": "Zinta Mallorca",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Mallorca.webp",
@@ -802,7 +802,7 @@
   },
   {
     "id": "2224",
-    "nombre": "Cinta Kenia Negro",
+    "nombre": "Zinta Kenia Negro",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Kenia-Negro.webp",
@@ -813,7 +813,7 @@
   },
   {
     "id": "2226",
-    "nombre": "Cinta Kenia Blanco",
+    "nombre": "Zinta Kenia Blanco",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Kenia-Blanco.webp",
@@ -824,7 +824,7 @@
   },
   {
     "id": "2228",
-    "nombre": "Cinta Escocia Rojo",
+    "nombre": "Zinta Escocia Rojo",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Escocia-Rojo.webp",
@@ -835,7 +835,7 @@
   },
   {
     "id": "2230",
-    "nombre": "Cinta Escocia Verde",
+    "nombre": "Zinta Escocia Verde",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Escocia-Verde.webp",
@@ -846,7 +846,7 @@
   },
   {
     "id": "2232",
-    "nombre": "Cinta Formentera",
+    "nombre": "Zinta Formentera",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "Cinta-Formentera.webp",
@@ -857,7 +857,7 @@
   },
   {
     "id": "2234",
-    "nombre": "Cinta Sahara",
+    "nombre": "Zinta Sahara",
     "precio": 15,
     "categoria": "tapiceria",
     "imagen": "CINTA-SAHARA-.webp",

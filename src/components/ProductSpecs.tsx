@@ -126,10 +126,7 @@ export default function ProductSpecs({
     <div className="mt-6">
       {topText && <p className="text-mid leading-relaxed">{topText}</p>}
 
-      <h3 className="text-sm font-medium text-texto uppercase tracking-wide mt-6">
-        Materiales y medidas
-      </h3>
-      <div className="mt-3 space-y-3">
+      <div className="mt-6 space-y-3">
         {specs.map((s) => (
           <div key={s.label} className="flex items-center gap-3">
             <span className="flex-shrink-0 w-10 h-10 rounded-full bg-terracotta/10 text-terracotta flex items-center justify-center">

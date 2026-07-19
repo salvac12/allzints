@@ -3,14 +3,15 @@ import NewsletterForm from "@/components/NewsletterForm";
 import PhotoCarousel from "@/components/PhotoCarousel";
 
 const heroImages = [
-  { src: "/images/productos/Hero-Modelo-Budapest.jpg", alt: "Modelo con cinta de móvil Budapest" },
-  { src: "/images/productos/Cinta-Etnica-Fucsia.webp", alt: "Cinta de móvil étnica fucsia" },
-  { src: "/images/productos/Cinta-Santorini.webp", alt: "Cinta de móvil Santorini" },
+  { src: "/images/productos/Hero-Modelo-Budapest.jpg", alt: "Modelo con Zinta de móvil Budapest" },
+  { src: "/images/productos/Cinta-Etnica-Fucsia.webp", alt: "Zinta de móvil étnica fucsia" },
+  { src: "/images/productos/Cinta-Santorini.webp", alt: "Zinta de móvil Santorini" },
   { src: "/images/productos/Hero-Modelo-NY.jpg", alt: "Modelo con bolso Nueva York" },
-  { src: "/images/productos/Cinta-Etnica-Mostaza.webp", alt: "Cinta de móvil étnica mostaza" },
+  { src: "/images/productos/Cinta-Etnica-Mostaza.webp", alt: "Zinta de móvil étnica mostaza" },
   { src: "/images/productos/Hero-Modelo-Santorini.jpg", alt: "Modelo con bolso Santorini" },
-  { src: "/images/productos/Cinta-Ibiza-Rosa.webp", alt: "Cinta de móvil Ibiza rosa" },
+  { src: "/images/productos/Cinta-Ibiza-Rosa.webp", alt: "Zinta de móvil Ibiza rosa" },
   { src: "/images/productos/Hero-Modelo-Mallorca.jpg", alt: "Modelo con bolso Mallorca" },
+  { src: "/images/productos/Hero-Lisboa.jpg", alt: "Móvil colgado de una Zinta junto al bolso Lisboa" },
 ];
 
 const galleryImages = [
@@ -27,19 +28,19 @@ const galleryImages = [
 const testimonials = [
   {
     name: "Rosa López",
-    text: "¡Las cintas de móvil son una maravilla! Me encanta cómo sujetan el móvil de forma segura sin que se caiga, y el diseño es súper elegante. Perfectas para el día a día, las recomiendo al 100%.",
+    text: "¡Las Zintas de móvil son una maravilla! Me encanta cómo sujetan el móvil de forma segura sin que se caiga, y el diseño es súper elegante. Perfectas para el día a día, las recomiendo al 100%.",
   },
   {
     name: "María Ruiz",
-    text: "Bonitas, funcionales y muy cómodas. La cinta cuelga-móvil me ha salvado de extraviar el teléfono. Envío rápido y producto tal como se describe en la web.",
+    text: "Bonitas, funcionales y muy cómodas. La Zinta cuelga-móvil me ha salvado de extraviar el teléfono. Envío rápido y producto tal como se describe en la web.",
   },
   {
     name: "Laura Gómez",
-    text: "¡Adoro mi cinta cuelga móvil! Es ligera y con un diseño precioso que va con todo. Ahora llevo el móvil siempre a mano sin miedo a que se me caiga, ideal para salir a correr o pasear. ¡Feliz con mi compra!",
+    text: "¡Adoro mi Zinta cuelga móvil! Es ligera y con un diseño precioso que va con todo. Ahora llevo el móvil siempre a mano sin miedo a que se me caiga, ideal para salir a correr o pasear. ¡Feliz con mi compra!",
   },
   {
     name: "David Herrera",
-    text: "¡La cinta cuelga móvil es genial para una persona como yo! La uso en el gimnasio y para ir en bici. Diseño práctico y resistente, la mejor compra que he hecho últimamente.",
+    text: "¡La Zinta cuelga móvil es genial para una persona como yo! La uso en el gimnasio y para ir en bici. Diseño práctico y resistente, la mejor compra que he hecho últimamente.",
   },
   {
     name: "Carmen Ortega",
@@ -76,7 +77,7 @@ export default function Home() {
             </p>
             <p className="mt-6 text-white/70 max-w-lg leading-relaxed text-base sm:text-lg text-balance">
               Cada pieza de All Zints está confeccionada a mano con materiales
-              seleccionados. Bolsos, cintas para móvil y accesorios diferentes
+              seleccionados. Bolsos, Zintas para móvil y accesorios diferentes
               y elegantes.
             </p>
           </div>

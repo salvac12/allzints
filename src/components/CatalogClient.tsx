@@ -92,7 +92,7 @@ export default function CatalogClient({ products }: CatalogClientProps) {
             >
               <Image
                 src="/images/productos/Cinta-Etnica-Fucsia.webp"
-                alt="Cintas étnicas"
+                alt="Zintas étnicas"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 640px) 100vw, 50vw"
@@ -111,7 +111,7 @@ export default function CatalogClient({ products }: CatalogClientProps) {
             >
               <Image
                 src="/images/productos/Cinta-Kenia-Blanco.webp"
-                alt="Cintas de tapicería"
+                alt="Zintas de tapicería"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 640px) 100vw, 50vw"

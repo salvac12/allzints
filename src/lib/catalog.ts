@@ -36,5 +36,5 @@ export const categoryLabels: Record<string, string> = {
   otros: "Otros",
 };
 
-// "Zintas" agrupa las dos familias de cintas de móvil.
+// "Zintas" agrupa las dos familias de Zintas de móvil.
 export const zintasCategorias = ["etnicas", "tapiceria"] as const;

@@ -45,7 +45,7 @@ export default function TerminosPage() {
 
       <h2>3. Productos</h2>
       <p>
-        En nuestra tienda ofrecemos accesorios, cintas para móviles, llaveros y
+        En nuestra tienda ofrecemos accesorios, Zintas para móviles, llaveros y
         bolsos. Nos esforzamos por mostrar las características, colores y
         detalles de los productos con la mayor precisión posible. Sin embargo,
         no podemos garantizar que los colores mostrados en pantalla coincidan

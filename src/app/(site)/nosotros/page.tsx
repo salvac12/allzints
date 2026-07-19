@@ -25,7 +25,7 @@ const faqs = [
       "Sí, aceptamos devoluciones en un plazo de 14 días desde la recepción del pedido, siempre que el producto esté en su estado original y sin usar. Contacta con nosotras para gestionar la devolución.",
   },
   {
-    question: "¿Las cintas para móvil son universales?",
+    question: "¿Las Zintas para móvil son universales?",
     answer:
       "Sí, todas nuestras zintas incluyen un adaptador universal compatible con la mayoría de smartphones. El mosquetón permite engancharla y desengancharla fácilmente.",
   },
@@ -80,9 +80,9 @@ export default function NosotrosPage() {
                   All Zints.
                 </p>
                 <p>
-                  El nombre nace de nuestro producto estrella: las cintas para
-                  móvil, que nosotras llamamos &quot;zintas&quot;. Empezamos
-                  vendiéndolas entre amigas y familia, y pronto descubrimos que
+                  El nombre nace de nuestro producto estrella: las Zintas para
+                  móvil. Empezamos vendiéndolas entre amigas y familia, y
+                  pronto descubrimos que
                   había mucha gente buscando algo así: accesorios únicos,
                   artesanales, con ese toque que nos define.
                 </p>

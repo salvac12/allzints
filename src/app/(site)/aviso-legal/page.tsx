@@ -27,7 +27,7 @@ export default function AvisoLegalPage() {
       <h2>Objeto del sitio web</h2>
       <p>
         El presente sitio web tiene como finalidad la venta de productos como
-        cintas para móvil, bolsos, llaveros y otros accesorios.
+        Zintas para móvil, bolsos, llaveros y otros accesorios.
       </p>
 
       <h2>Condiciones de uso</h2>
