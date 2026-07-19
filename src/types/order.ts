@@ -30,7 +30,7 @@ export const SHIPPING_OPTIONS: Record<
 // ── Cálculo de envío por peso (tarifas Correos península) ──────────────
 // El peso se estima por unidades: 1 cinta = 1 unidad (~70 g),
 // 1 bolso = 2 unidades. El paquete se factura por tramo de peso.
-export const FREE_SHIPPING_THRESHOLD = 45; // € — envío ordinario gratis desde aquí
+export const FREE_SHIPPING_THRESHOLD = 50; // € — envío ordinario gratis desde aquí
 const UNIT_WEIGHT_G = 70;
 
 // Tramos Correos por peso (gramos) → coste € { ordinario, certificado }
