@@ -16,7 +16,7 @@ const MEDIDAS: Record<string, string> = {
   tapiceria: "Largo: 120 cm · Ancho: 3 cm",
   "mini-etnicas": "Largo: 20 cm · Ancho: 3 cm",
   "mini-gobelino": "Largo: 20 cm · Ancho: 3 cm",
-  llaveros: "Largo: 17 cm",
+  llaveros: "Largo: 17 cm · Ancho: 3,8 cm",
   bolsos: "Alto: 20 cm · Ancho: 30 cm",
 };
 
@@ -25,7 +25,7 @@ const MATERIALES: Record<string, string> = {
   tapiceria: "Algodón y poliéster",
   "mini-etnicas": "Algodón, acrílico y poliamida",
   "mini-gobelino": "Algodón y poliéster",
-  llaveros: "Poliéster",
+  llaveros: "Poliéster jacquard",
   bolsos: "Tela de gobelino y forro de tela de toldo",
 };
 

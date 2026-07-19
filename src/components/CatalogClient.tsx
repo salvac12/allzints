@@ -72,7 +72,7 @@ export default function CatalogClient({ products }: CatalogClientProps) {
       {/* Intro descriptivo de las Zintas */}
       {showZintasIntro && (
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <p className="text-mid leading-relaxed text-base md:text-lg">
+          <p className="text-mid leading-relaxed text-base md:text-lg text-balance">
             Lleva contigo un toque artesanal con nuestras Zintas de móvil,
             confeccionadas a mano con telas de alta calidad. Ideales para
             personalizar tus accesorios, estas Zintas aportan un estilo único y
@@ -127,7 +127,7 @@ export default function CatalogClient({ products }: CatalogClientProps) {
       {/* Intro Mini Zintas: dos subcategorías (Étnicas / Gobelino) */}
       {showMiniIntro && (
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <p className="text-mid leading-relaxed text-base md:text-lg">
+          <p className="text-mid leading-relaxed text-base md:text-lg text-balance">
             Nuestras Mini Zintas: la versión más compacta de nuestras Zintas,
             hechas a mano con las mismas telas. El complemento perfecto para dar
             un toque artesanal a tus accesorios. Elige entre tejido étnico o
@@ -168,7 +168,7 @@ export default function CatalogClient({ products }: CatalogClientProps) {
       {/* Otros: subcategorías en preparación (próximamente) */}
       {activeFilter === "otros" && (
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <p className="text-mid leading-relaxed text-base md:text-lg">
+          <p className="text-mid leading-relaxed text-base md:text-lg text-balance">
             Estamos preparando nuevas colecciones hechas a mano con el mismo
             mimo que nuestras Zintas. Cinturones, abanicos, llaveros y mini
             Zintas llegarán muy pronto. ¡Vuelve para descubrirlas!
@@ -209,7 +209,7 @@ export default function CatalogClient({ products }: CatalogClientProps) {
       {/* Bolsos: texto descriptivo */}
       {activeFilter === "bolsos" && (
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <p className="text-mid leading-relaxed text-base md:text-lg">
+          <p className="text-mid leading-relaxed text-base md:text-lg text-balance">
             Estos bolsos tipo cartera están confeccionados en tela de gobelino,
             con entretela para darles más cuerpo y un interior forrado de tela
             de toldo, fácil de limpiar. Incluyen dos presillas para colgar una
@@ -222,7 +222,7 @@ export default function CatalogClient({ products }: CatalogClientProps) {
       {/* Llaveros: texto descriptivo */}
       {activeFilter === "llaveros" && (
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <p className="text-mid leading-relaxed text-base md:text-lg">
+          <p className="text-mid leading-relaxed text-base md:text-lg text-balance">
             Nuestros llaveros artesanales están tejidos a mano con los mismos
             tejidos que nuestras Zintas, con una anilla metálica resistente
             para que siempre lleves un toque de color en tus llaves.
