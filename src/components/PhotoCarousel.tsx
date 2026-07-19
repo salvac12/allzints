@@ -53,6 +53,7 @@ export default function PhotoCarousel({
           fill
           priority={priority && i === 0}
           sizes={sizes}
+          quality={90}
           className={`object-cover object-center transition-opacity duration-1000 ease-in-out ${
             i === index ? "opacity-100" : "opacity-0"
           }`}

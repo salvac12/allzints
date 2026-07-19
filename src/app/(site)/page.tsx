@@ -65,7 +65,7 @@ export default function Home() {
             showDots={false}
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-dark/90 via-dark/60 to-dark/20" />
+        <div className="absolute inset-0 bg-gradient-to-r from-dark/70 via-dark/40 to-dark/10" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36 lg:py-44">
           <div className="max-w-2xl">
             <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight text-white">
@@ -74,7 +74,7 @@ export default function Home() {
             <p className="mt-4 text-lg sm:text-xl text-white/80 font-heading italic">
               con telas étnicas
             </p>
-            <p className="mt-6 text-white/70 max-w-lg leading-relaxed">
+            <p className="mt-6 text-white/70 max-w-lg leading-relaxed text-base sm:text-lg text-balance">
               Cada pieza de All Zints está confeccionada a mano con materiales
               seleccionados. Bolsos, cintas para móvil y accesorios diferentes
               y elegantes.
@@ -161,7 +161,7 @@ export default function Home() {
                 Envío a toda España
               </h3>
               <p className="text-mid text-sm">
-Envío gratuito en pedidos desde 45€. El coste se calcula en el carrito.
+                Envío gratuito en pedidos desde 50€. El coste se calcula en el carrito.
               </p>
             </div>
             <div className="space-y-2">
@@ -243,8 +243,7 @@ Envío gratuito en pedidos desde 45€. El coste se calcula en el carrito.
             Recibe 10% de descuento en tu primer pedido
           </h2>
           <p className="mt-4 text-mid">
-            Suscríbete para recibir novedades, ofertas exclusivas y contenido
-            sobre moda artesanal.
+            Suscríbete para recibir novedades y ofertas exclusivas.
           </p>
           <NewsletterForm />
           <p className="mt-3 text-xs text-mid">
