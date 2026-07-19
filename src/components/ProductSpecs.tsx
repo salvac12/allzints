@@ -25,7 +25,7 @@ const MATERIALES: Record<string, string> = {
   tapiceria: "Algodón y poliéster",
   "mini-etnicas": "Algodón, acrílico y poliamida",
   "mini-gobelino": "Algodón y poliéster",
-  llaveros: "Poliéster jacquard",
+  llaveros: "Poliéster y jacquard",
   bolsos: "Tela de gobelino y forro de tela de toldo",
 };
 
